@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+body, h1, h3, h2, h4, h5, h6, p, dl, dd, ul, li, ol, td, form, input, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff; }
+
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #666;
+  background: #fff; }
+
+img {
+  display: block; }
+
+a, input {
+  outline: none; }
+
+em, i {
+  font-style: normal; }
+
+b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+body {
+  background: #f2f2f2; }
+
+#topbar {
+  height: 32px;
+  line-height: 32px;
+  background: #f2f2f2;
+  font-size: 12px;
+  color: #6c6c6c;
+  border-bottom: 1px solid #e5e5e5; }
+  #topbar .top {
+    width: 1200px;
+    margin: 0 auto; }
+    #topbar .top .toplogin {
+      float: left; }
+      #topbar .top .toplogin .login {
+        margin-left: 10px; }
+      #topbar .top .toplogin a {
+        color: #ec3e7d;
+        text-decoration: underline; }
+    #topbar .top #bar {
+      float: right;
+      text-align: right; }
+      #topbar .top #bar ul li {
+        border: none;
+        display: inline-block;
+        height: 32px;
+        position: relative; }
+        #topbar .top #bar ul li a {
+          display: block;
+          padding: 0 12px;
+          font-weight: normal;
+          color: #6c6c6c; }
+
+#head {
+  background: #fff;
+  position: relative;
+  z-index: 300; }
+  #head .headsearch {
+    width: 1200px;
+    margin: 0 auto;
+    height: 95px;
+    position: relative; }
+    #head .headsearch #search {
+      position: absolute;
+      top: 21px;
+      left: 400px; }
+      #head .headsearch #search .searchinput {
+        background: #ec3e7d;
+        width: 346px;
+        height: 36px;
+        float: left;
+        position: relative; }
+        #head .headsearch #search .searchinput input {
+          border: none;
+          width: 330px;
+          height: 24px;
+          line-height: 24px;
+          padding: 3px 5px;
+          font-size: 14px;
+          position: absolute;
+          left: 3px;
+          top: 3px;
+          color: #999; }
+      #head .headsearch #search button {
+        border: none;
+        color: white;
+        text-align: center;
+        background-color: #ec3e7d;
+        width: 90px;
+        height: 36px;
+        line-height: 36px;
+        float: left;
+        cursor: pointer;
+        text-shadow: none;
+        padding: 0; }
+      #head .headsearch #search .hotword {
+        width: 500px;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        clear: both;
+        font-size: 12px;
+        text-align: left; }
+        #head .headsearch #search .hotword a {
+          color: #999;
+          border-left: 1px solid #999;
+          line-height: 14px;
+          height: 14px;
+          display: inline-block;
+          padding: 0 10px;
+          margin: 0 10px 0 -10px; }
