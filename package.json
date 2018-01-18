@@ -1,0 +1,23 @@
+{
+  "name": "gulp-t",
+  "version": "1.0.0",
+  "description": "gulp config for learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pengyouwei",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-connect": "^5.2.0",
+    "gulp-sass-china": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
+  }
+}
