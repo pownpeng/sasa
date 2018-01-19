@@ -562,3 +562,308 @@ body {
         color: #fff;
         font-size: 16px;
         letter-spacing: 1px; }
+
+.limit .muchselling {
+  text-align: center;
+  padding-top: 20px; }
+  .limit .muchselling .selling {
+    display: block;
+    width: 160px;
+    border-radius: 24px;
+    background: #fc3f83;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 auto;
+    position: relative; }
+    .limit .muchselling .selling span {
+      border-left: 6px solid #fff;
+      border-right: none;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      position: absolute;
+      bottom: 13px;
+      right: 28px; }
+
+/*销售排行*/
+.sales {
+  padding-bottom: 30px; }
+  .sales .salesrank {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .sales .salesrank .salesrankimg {
+      width: 1200px;
+      margin: 0 auto;
+      height: 26px;
+      background: url("../images/title_ranking.png") no-repeat;
+      margin-top: 38px;
+      margin-bottom: 26px; }
+    .sales .salesrank .ranklist .skinranklist {
+      width: 382px;
+      border-top: 2px solid #fc3f83;
+      background: #fff;
+      float: left;
+      margin-right: 27px; }
+      .sales .salesrank .ranklist .skinranklist .skin_rank_list_hd {
+        width: 100%;
+        height: 64px;
+        line-height: 64px;
+        text-align: center;
+        font-size: 22px;
+        color: #111; }
+      .sales .salesrank .ranklist .skinranklist .rankitem {
+        width: 362px;
+        height: 80px;
+        padding: 10px;
+        position: relative;
+        border-top: 1px solid #eee; }
+        .sales .salesrank .ranklist .skinranklist .rankitem a img {
+          width: 80px;
+          height: 80px;
+          float: left; }
+        .sales .salesrank .ranklist .skinranklist .rankitem .rankiteminfo {
+          width: 272px;
+          height: 80px;
+          float: right; }
+          .sales .salesrank .ranklist .skinranklist .rankitem .rankiteminfo .rankiteminfoname {
+            width: 100%;
+            height: 36px;
+            line-height: 18px;
+            overflow: hidden;
+            margin-top: 13px;
+            font-size: 13px; }
+            .sales .salesrank .ranklist .skinranklist .rankitem .rankiteminfo .rankiteminfoname a {
+              color: #222; }
+          .sales .salesrank .ranklist .skinranklist .rankitem .rankiteminfo .rankiteminfoprice {
+            width: 100%;
+            height: 20px;
+            margin-top: 7px; }
+            .sales .salesrank .ranklist .skinranklist .rankitem .rankiteminfo .rankiteminfoprice .curnum {
+              float: left;
+              color: #fc3f83;
+              font-size: 16px;
+              line-height: 20px;
+              height: 20px; }
+            .sales .salesrank .ranklist .skinranklist .rankitem .rankiteminfo .rankiteminfoprice .oldnum {
+              float: left;
+              margin-left: 5px;
+              color: #999;
+              height: 21px;
+              line-height: 21px;
+              line-height: 21px; }
+            .sales .salesrank .ranklist .skinranklist .rankitem .rankiteminfo .rankiteminfoprice .soldnum {
+              float: right;
+              line-height: 20px;
+              color: #999;
+              font-size: 11px;
+              margin-right: 10px; }
+    .sales .salesrank .ranklist .makeupranklist {
+      width: 382px;
+      border-top: 2px solid #fc3f83;
+      background: #fff;
+      float: left;
+      margin-right: 27px; }
+      .sales .salesrank .ranklist .makeupranklist .makeup_rank_list_hd {
+        width: 100%;
+        height: 64px;
+        line-height: 64px;
+        text-align: center;
+        font-size: 22px;
+        color: #111; }
+      .sales .salesrank .ranklist .makeupranklist .rankitem {
+        width: 362px;
+        height: 80px;
+        padding: 10px;
+        position: relative;
+        border-top: 1px solid #eee; }
+        .sales .salesrank .ranklist .makeupranklist .rankitem a img {
+          width: 80px;
+          height: 80px;
+          float: left; }
+        .sales .salesrank .ranklist .makeupranklist .rankitem .rankiteminfo {
+          width: 272px;
+          height: 80px;
+          float: right; }
+          .sales .salesrank .ranklist .makeupranklist .rankitem .rankiteminfo .rankiteminfoname {
+            width: 100%;
+            height: 36px;
+            line-height: 18px;
+            overflow: hidden;
+            margin-top: 13px;
+            font-size: 13px; }
+            .sales .salesrank .ranklist .makeupranklist .rankitem .rankiteminfo .rankiteminfoname a {
+              color: #222; }
+          .sales .salesrank .ranklist .makeupranklist .rankitem .rankiteminfo .rankiteminfoprice {
+            width: 100%;
+            height: 20px;
+            margin-top: 7px; }
+            .sales .salesrank .ranklist .makeupranklist .rankitem .rankiteminfo .rankiteminfoprice .curnum {
+              float: left;
+              color: #fc3f83;
+              font-size: 16px;
+              line-height: 20px;
+              height: 20px; }
+            .sales .salesrank .ranklist .makeupranklist .rankitem .rankiteminfo .rankiteminfoprice .oldnum {
+              float: left;
+              margin-left: 5px;
+              color: #999;
+              height: 21px;
+              line-height: 21px;
+              line-height: 21px; }
+            .sales .salesrank .ranklist .makeupranklist .rankitem .rankiteminfo .rankiteminfoprice .soldnum {
+              float: right;
+              line-height: 20px;
+              color: #999;
+              font-size: 11px;
+              margin-right: 10px; }
+    .sales .salesrank .ranklist .nurseranklist {
+      width: 382px;
+      border-top: 2px solid #fc3f83;
+      background: #fff;
+      float: left; }
+      .sales .salesrank .ranklist .nurseranklist .nurse_rank_list_hb {
+        width: 100%;
+        height: 64px;
+        line-height: 64px;
+        text-align: center;
+        font-size: 22px;
+        color: #111; }
+      .sales .salesrank .ranklist .nurseranklist .rankitem {
+        width: 362px;
+        height: 80px;
+        padding: 10px;
+        position: relative;
+        border-top: 1px solid #eee; }
+        .sales .salesrank .ranklist .nurseranklist .rankitem a img {
+          width: 80px;
+          height: 80px;
+          float: left; }
+        .sales .salesrank .ranklist .nurseranklist .rankitem .rankiteminfo {
+          width: 272px;
+          height: 80px;
+          float: right; }
+          .sales .salesrank .ranklist .nurseranklist .rankitem .rankiteminfo .rankiteminfoname {
+            width: 100%;
+            height: 36px;
+            line-height: 18px;
+            overflow: hidden;
+            margin-top: 13px;
+            font-size: 13px; }
+            .sales .salesrank .ranklist .nurseranklist .rankitem .rankiteminfo .rankiteminfoname a {
+              color: #222; }
+          .sales .salesrank .ranklist .nurseranklist .rankitem .rankiteminfo .rankiteminfoprice {
+            width: 100%;
+            height: 20px;
+            margin-top: 7px; }
+            .sales .salesrank .ranklist .nurseranklist .rankitem .rankiteminfo .rankiteminfoprice .curnum {
+              float: left;
+              color: #fc3f83;
+              font-size: 16px;
+              line-height: 20px;
+              height: 20px; }
+            .sales .salesrank .ranklist .nurseranklist .rankitem .rankiteminfo .rankiteminfoprice .oldnum {
+              float: left;
+              margin-left: 5px;
+              color: #999;
+              height: 21px;
+              line-height: 21px;
+              line-height: 21px; }
+            .sales .salesrank .ranklist .nurseranklist .rankitem .rankiteminfo .rankiteminfoprice .soldnum {
+              float: right;
+              line-height: 20px;
+              color: #999;
+              font-size: 11px;
+              margin-right: 10px; }
+
+.base {
+  padding-top: 30px;
+  background: #f1f1f1; }
+  .base .basepro {
+    width: 1200px;
+    margin: 0 auto; }
+    .base .basepro .baseproimg {
+      width: 1200px;
+      height: 26px;
+      background: url("../images/new_arrival.png");
+      margin: 0 auto;
+      margin-bottom: 26px; }
+    .base .basepro .newlist {
+      width: 100%;
+      overflow: hidden; }
+      .base .basepro .newlist .newitem {
+        width: 290px;
+        height: 380px;
+        background: #fff;
+        border: none;
+        float: left;
+        margin: 0 12px 12px 0; }
+        .base .basepro .newlist .newitem .newitem_img {
+          height: 270px;
+          width: 270px;
+          padding: 10px;
+          position: relative; }
+          .base .basepro .newlist .newitem .newitem_img a img {
+            width: 100%;
+            height: 100%; }
+          .base .basepro .newlist .newitem .newitem_img .newicon {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #80b53f; }
+            .base .basepro .newlist .newitem .newitem_img .newicon .span {
+              display: block;
+              padding: 6px 0;
+              font-size: 13px;
+              line-height: 13px;
+              color: #fff; }
+          .base .basepro .newlist .newitem .newitem_img .country_brand {
+            position: absolute;
+            top: 10px;
+            right: 16px;
+            width: 80px;
+            height: 20px; }
+            .base .basepro .newlist .newitem .newitem_img .country_brand span {
+              font-size: 12px;
+              line-height: 20px;
+              height: 20px;
+              display: block;
+              float: right;
+              color: #999; }
+        .base .basepro .newlist .newitem .newiteminfo {
+          width: 250px;
+          height: 33px;
+          line-height: 16px;
+          padding: 0 20px;
+          margin-bottom: 16px;
+          overflow: hidden; }
+          .base .basepro .newlist .newitem .newiteminfo a {
+            font-size: 13px;
+            color: #222; }
+        .base .basepro .newlist .newitem .newitemprice {
+          width: 250px;
+          height: 20px;
+          padding: 0 20px;
+          margin-bottom: 20px; }
+          .base .basepro .newlist .newitem .newitemprice .pricesign {
+            float: left;
+            display: block;
+            margin-top: -1px;
+            font-size: 13px;
+            color: #fc3f83; }
+          .base .basepro .newlist .newitem .newitemprice .newprice {
+            display: block;
+            float: left;
+            font-size: 18px;
+            color: #fc3f83; }
+          .base .basepro .newlist .newitem .newitemprice .oldprice {
+            display: block;
+            color: #999;
+            margin-left: 5px;
+            margin-top: 3px;
+            line-height: 21px;
+            height: 21px;
+            text-decoration: line-through; }

@@ -103,33 +103,27 @@ define(["jquery"],function(){     //功能模块
 			this.onhover()
 		},
 		onhover:function(){
-			/*var $dom=$(".must_check_item")
+			var $dom=$(".limit_item")
 			$dom.on("mouseover",function(){
 				$(this).css({
 					boxShadow:"0 0 5px #ddd"
 				})
-			})
+			}) 
 			$dom.on("mouseout",function(){
 				$(this).css({
 					boxShadow:"none"
 				})
 			})
-			var $a=$("a:odd",this.box);
-			for(i=0;i<$a.length;i++){
-				$($a[i]).css({
-					float:"right"
-				})
-			}
-			$(".must_check_btn").on("mouseover",function(){
+			$(".limitbtn").on("mouseover",function(){
 				$(this).css({
 					background:"rgb(197,50,101)"
 				})
 			})
-			$(".must_check_btn").on("mouseout",function(){
+			$(".limitbtn").on("mouseout",function(){
 				$(this).css({
 					background:"#e93b78"
 				})
-			})*/
+			})
 		}
 	}
    return new limit()
