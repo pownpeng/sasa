@@ -476,11 +476,12 @@ body{
 	.limitcommodity{
 		@include wid;
 		font-size:12px;
-		.limit_href{
+		a{
 			.limit_item{
 				width:1200px;
 				height:360px;
 				overflow:hidden;
+				position:relative;
 				margin-top:26px;
 				background:#fff;
 				.limit_weapper{
@@ -515,6 +516,109 @@ body{
 								font-weight:bold;
 							}
 						}
+					}
+				}
+				.limitinfo{
+					width:480px;
+					height:244px; 
+					margin:40px 40px 0 0;
+					float:right;
+					position:relative;
+					.counttime{
+						height:24px;
+						padding:0 10px;
+						background:#414141;
+						color:#fff;
+						line-height:24px;
+						text-align:center;
+						font-size:13px;
+						display:inline-block;
+					}
+					.limitinfo_intro{
+						width:100%;
+						height:120px;
+						font-size:17px;
+						line-height:30px;
+						margin:10px 0;
+						color:#222;
+					}
+					.limitinfo_title{
+						width:100%;
+						height:20px;
+						position:absolute;
+						bottom:44px;
+						left:0;
+						font-size:13px;
+						overflow:hidden;
+						white-space:nowrap;
+						text-overflow:ellipsis;
+						color:#666;
+					}
+					.limitinfo_price{
+						width:100%;
+						height:30px;
+						position:absolute;
+						bottom:0;
+						left:0;
+						.limitinfo_price_cur{
+							font-weight:600;
+							color:#fc3f83;
+							float:left;
+							height:30px;
+							line-height:30px;
+							.price_cur_sig{
+								font-size:20px;
+								display:block;
+								float:left;
+								margin-top:-4px;
+							}
+							.price_cur_num{
+								font-size:32px;
+								line-height:30px;
+								font-family:"Arial";
+							}
+						}
+						.limitinfo_price_old{
+							color:#999;
+							float:left;
+							margin-top:9px;
+							margin-left:7px;
+							position:relative;
+							line-height:23px;
+							height:23px;
+							font-size:13px;
+							.price_old_sig{
+								text-decoration:line-through;
+							}
+						}
+					}
+				}
+				.limit_bottom{
+					width:480px;
+					height:32px;
+					position:absolute;
+					bottom:42px;
+					right:42px;
+					.limit_bottom_sold{
+						width:100px;
+						height:13px;
+						line-height:13px;
+						margin-top:19px;
+						float:left;
+						color:#999;
+					}
+					.limitbtn{
+						width:92px;
+						height:32px;
+						line-height:32px;
+						display:block;
+						float:right;
+						text-align:center;
+						cursor:pointer;
+						background:#e93b78;
+						color:#fff;
+						font-size:16px;
+						letter-spacing:1px;
 					}
 				}
 			}

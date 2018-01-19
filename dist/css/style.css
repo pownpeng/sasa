@@ -436,22 +436,23 @@ body {
   width: 1200px;
   margin: 0 auto;
   font-size: 12px; }
-  .limit .limitcommodity .limit_href .limit_item {
+  .limit .limitcommodity a .limit_item {
     width: 1200px;
     height: 360px;
     overflow: hidden;
+    position: relative;
     margin-top: 26px;
     background: #fff; }
-    .limit .limitcommodity .limit_href .limit_item .limit_weapper {
+    .limit .limitcommodity a .limit_item .limit_weapper {
       width: 640px;
       height: 360px;
       position: relative;
       float: left;
       overflow: hidden; }
-      .limit .limitcommodity .limit_href .limit_item .limit_weapper img {
+      .limit .limitcommodity a .limit_item .limit_weapper img {
         width: 100%;
         height: 100%; }
-      .limit .limitcommodity .limit_href .limit_item .limit_weapper i {
+      .limit .limitcommodity a .limit_item .limit_weapper i {
         width: 68px;
         height: 68px;
         position: absolute;
@@ -462,12 +463,102 @@ body {
         display: block;
         background: url("../images/discount_circle.png") no-repeat;
         z-index: 1; }
-        .limit .limitcommodity .limit_href .limit_item .limit_weapper i b {
+        .limit .limitcommodity a .limit_item .limit_weapper i b {
           color: #fff;
           font-size: 24px;
           font-weight: normal;
           width: 68px;
           display: block; }
-          .limit .limitcommodity .limit_href .limit_item .limit_weapper i b span {
+          .limit .limitcommodity a .limit_item .limit_weapper i b span {
             font-size: 16px;
             font-weight: bold; }
+    .limit .limitcommodity a .limit_item .limitinfo {
+      width: 480px;
+      height: 244px;
+      margin: 40px 40px 0 0;
+      float: right;
+      position: relative; }
+      .limit .limitcommodity a .limit_item .limitinfo .counttime {
+        height: 24px;
+        padding: 0 10px;
+        background: #414141;
+        color: #fff;
+        line-height: 24px;
+        text-align: center;
+        font-size: 13px;
+        display: inline-block; }
+      .limit .limitcommodity a .limit_item .limitinfo .limitinfo_intro {
+        width: 100%;
+        height: 120px;
+        font-size: 17px;
+        line-height: 30px;
+        margin: 10px 0;
+        color: #222; }
+      .limit .limitcommodity a .limit_item .limitinfo .limitinfo_title {
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        bottom: 44px;
+        left: 0;
+        font-size: 13px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #666; }
+      .limit .limitcommodity a .limit_item .limitinfo .limitinfo_price {
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+        .limit .limitcommodity a .limit_item .limitinfo .limitinfo_price .limitinfo_price_cur {
+          font-weight: 600;
+          color: #fc3f83;
+          float: left;
+          height: 30px;
+          line-height: 30px; }
+          .limit .limitcommodity a .limit_item .limitinfo .limitinfo_price .limitinfo_price_cur .price_cur_sig {
+            font-size: 20px;
+            display: block;
+            float: left;
+            margin-top: -4px; }
+          .limit .limitcommodity a .limit_item .limitinfo .limitinfo_price .limitinfo_price_cur .price_cur_num {
+            font-size: 32px;
+            line-height: 30px;
+            font-family: "Arial"; }
+        .limit .limitcommodity a .limit_item .limitinfo .limitinfo_price .limitinfo_price_old {
+          color: #999;
+          float: left;
+          margin-top: 9px;
+          margin-left: 7px;
+          position: relative;
+          line-height: 23px;
+          height: 23px;
+          font-size: 13px; }
+          .limit .limitcommodity a .limit_item .limitinfo .limitinfo_price .limitinfo_price_old .price_old_sig {
+            text-decoration: line-through; }
+    .limit .limitcommodity a .limit_item .limit_bottom {
+      width: 480px;
+      height: 32px;
+      position: absolute;
+      bottom: 42px;
+      right: 42px; }
+      .limit .limitcommodity a .limit_item .limit_bottom .limit_bottom_sold {
+        width: 100px;
+        height: 13px;
+        line-height: 13px;
+        margin-top: 19px;
+        float: left;
+        color: #999; }
+      .limit .limitcommodity a .limit_item .limit_bottom .limitbtn {
+        width: 92px;
+        height: 32px;
+        line-height: 32px;
+        display: block;
+        float: right;
+        text-align: center;
+        cursor: pointer;
+        background: #e93b78;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px; }

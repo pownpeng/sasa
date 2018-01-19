@@ -10,7 +10,7 @@ gulp.task("html",()=>{
 			 	.pipe(connect.reload());//自动刷新;
 });
 gulp.task("watch",()=>{
-	gulp.watch(["./style/*.scss","src/script/*.js","*.html","./images/*.*","./json/*.json"],["sass","script","html","image","json"]);
+	gulp.watch(["./style/*.scss","./script/*.js","*.html","./images/*.*","./json/*.json"],["sass","script","html","image","json"]);
 });
 gulp.task('server',function(){
     connect.server({
@@ -34,6 +34,6 @@ gulp.task("image",()=>{
 });
 gulp.task("json",()=>{
      return gulp.src('./json/*.json')
-    .pipe(gulp.dest('dist/script'));
+    .pipe(gulp.dest('dist/json'));
 });
 gulp.task("default",["watch","server"]);

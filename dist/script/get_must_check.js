@@ -55,6 +55,16 @@ define(["jquery"],function(){
 					float:"right"
 				})
 			}
+			$(".must_check_btn").on("mouseover",function(){
+				$(this).css({
+					background:"rgb(197,50,101)"
+				})
+			})
+			$(".must_check_btn").on("mouseout",function(){
+				$(this).css({
+					background:"#e93b78"
+				})
+			})
 		}
 	}
    return new reloadimg()
