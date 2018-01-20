@@ -19,7 +19,8 @@ define(["jquery"],function(){
 			})
 		},
 		create:function(data){   //将请求的数据输出在页面中
-			console.log(data.length)
+			//console.log(data.length)
+			var count=0;
 			for(i=0;i<data.length;i++){   //字符串拼接
 				var $html="<div class='"+"newitem"+"'>"
 			     				+"<div class='"+"newitem_img"+"'>"
@@ -29,7 +30,7 @@ define(["jquery"],function(){
 			     					+"</div>"
 			     					+"<div class="+"country_brand"+">"
 			     						+"<i>"+"</i>"
-			     						+"<span>"+"欧美品牌"+"</span>"
+			     						+"<span>"+data[i].country+"</span>"
 			     					+"</div>"
 			     				+"</div>"
 			     				+"<div class="+"newiteminfo"+">"
@@ -37,19 +38,31 @@ define(["jquery"],function(){
 			     				+"</div>"
 			     				+"<div class="+"newitemprice"+">"
 			     					+"<span class="+"pricesign"+">"+"￥"+"</span>"
-			     					+"<span class="+"newprice"+">"+data[i].pricenum+"</span>"
+			     					+"<span class="+"newprice"+">"+data[i].pricenum+"&nbsp;"+"</span>"
 			     					+"<span class="+"oldprice"+">"+data[i].oldprice+"</span>"
 			     				+"</div>"
 			     			+"</div>"
 			  $($html).appendTo(this.box)
-			  $($("i",this.box)[i]).css({
-			  		background:data[i].countryicon
-			  })
+			 // console.log(data[i].countryicon,$("i",this.box)[i])
+			  $("i",this.box)[i].style.background="url("+data[i].countryicon+")";
+			  count++;
+			  if(count%4==0){
+			  		$(".newitem")[i].style.marginRight="0";
+			  }
 			}
 			this.onhover()
 		},
 		onhover:function(){
-		
+			$(".newitem").on("mouseenter",function(){
+				$(this).css({
+					border:"1px solid #fc3f83"
+				})
+			})
+			$(".newitem").on("mouseleave",function(){
+				$(this).css({
+					border:"1px solid #fff"
+				})
+			})
 		}
 	}
    return new Base()

@@ -5,7 +5,8 @@ require.config({  //配置文件模块
 		"mustcheck":"script/get_must_check",
 		"limit":"script/limitedoffer",
 		"ranklist":"script/ranklist",
-		"newbase":"script/newbase"
+		"newbase":"script/newbase",
+		"stairs":"script/stairs"
 	}
 
 })

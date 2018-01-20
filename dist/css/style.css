@@ -33,8 +33,8 @@ b, strong, h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: 'iconfont';
   /* project id 545694 */
-  src: url("//at.alicdn.com/t/font_545694_uqszzm67orrrizfr.eot");
-  src: url("//at.alicdn.com/t/font_545694_uqszzm67orrrizfr.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_545694_uqszzm67orrrizfr.woff") format("woff"), url("//at.alicdn.com/t/font_545694_uqszzm67orrrizfr.ttf") format("truetype"), url("//at.alicdn.com/t/font_545694_uqszzm67orrrizfr.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.eot");
+  src: url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.woff") format("woff"), url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.ttf") format("truetype"), url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.svg#iconfont") format("svg"); }
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -793,12 +793,13 @@ body {
       width: 100%;
       overflow: hidden; }
       .base .basepro .newlist .newitem {
-        width: 290px;
-        height: 380px;
+        width: 288px;
+        height: 378px;
         background: #fff;
         border: none;
         float: left;
-        margin: 0 12px 12px 0; }
+        margin: 0 12px 12px 0;
+        border: 1px solid #fff; }
         .base .basepro .newlist .newitem .newitem_img {
           height: 270px;
           width: 270px;
@@ -814,18 +815,23 @@ body {
             top: 10px;
             left: 10px;
             background: #80b53f; }
-            .base .basepro .newlist .newitem .newitem_img .newicon .span {
+            .base .basepro .newlist .newitem .newitem_img .newicon span {
               display: block;
               padding: 6px 0;
               font-size: 13px;
               line-height: 13px;
-              color: #fff; }
+              color: #fff;
+              text-align: center; }
           .base .basepro .newlist .newitem .newitem_img .country_brand {
             position: absolute;
             top: 10px;
             right: 16px;
             width: 80px;
             height: 20px; }
+            .base .basepro .newlist .newitem .newitem_img .country_brand i {
+              display: inline-block;
+              width: 20px;
+              height: 20px; }
             .base .basepro .newlist .newitem .newitem_img .country_brand span {
               font-size: 12px;
               line-height: 20px;
@@ -867,3 +873,281 @@ body {
             line-height: 21px;
             height: 21px;
             text-decoration: line-through; }
+
+/*页脚*/
+.footer {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd; }
+  .footer .footeritem {
+    width: 1200px;
+    margin: 0 auto;
+    height: 120px; }
+    .footer .footeritem ul li {
+      width: 150px;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      margin-right: 80px; }
+      .footer .footeritem ul li i {
+        width: 32px;
+        height: 32px;
+        margin-top: 42px;
+        float: left;
+        display: inline-block;
+        background-image: url("../images/promise_icon.png");
+        background-repeat: no-repeat; }
+      .footer .footeritem ul li .item2 {
+        background-position: -56px 0; }
+      .footer .footeritem ul li .item3 {
+        width: 39px;
+        background-position: -112px 0; }
+      .footer .footeritem ul li .item4 {
+        width: 38px;
+        background-position: -177px 0; }
+      .footer .footeritem ul li .item5 {
+        background-position: -236px 0; }
+      .footer .footeritem ul li p {
+        width: 104px;
+        margin-left: 14px;
+        float: left;
+        height: 50px;
+        margin-top: 38px; }
+    .footer .footeritem ul .list1 {
+      width: 182px; }
+    .footer .footeritem ul .list2 {
+      width: 162px; }
+    .footer .footeritem ul .list3 {
+      width: 168px; }
+    .footer .footeritem ul .list4 {
+      width: 193px; }
+    .footer .footeritem ul .list5 {
+      margin-right: 0;
+      width: 166px; }
+  .footer .clearfix {
+    width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+    height: 246px; }
+    .footer .clearfix div {
+      width: 90px;
+      margin-right: 90px;
+      margin-top: 16px;
+      float: left; }
+      .footer .clearfix div p a {
+        color: #222;
+        font-size: 14px;
+        font-weight: bold; }
+      .footer .clearfix div ul li {
+        letter-spacing: 1px; }
+        .footer .clearfix div ul li a {
+          color: #999;
+          font-size: 12px; }
+    .footer .clearfix .helper_5 {
+      margin-right: 0; }
+    .footer .clearfix .footercode {
+      width: 300px;
+      margin-right: 0;
+      margin-top: 5px;
+      float: right; }
+      .footer .clearfix .footercode div {
+        width: 110px;
+        margin-top: 0px;
+        margin-right: 40px;
+        float: left; }
+        .footer .clearfix .footercode div img {
+          width: 128px;
+          height: 128px; }
+        .footer .clearfix .footercode div p {
+          font-size: 12px;
+          padding-left: 10px;
+          font-weight: bold;
+          color: #111; }
+
+/*网站信息*/
+.information {
+  width: 100%;
+  background: #000; }
+  .information .info {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 26px 0; }
+    .information .info .link a {
+      display: inline-block;
+      padding: 0px 10px;
+      color: #fff;
+      font-size: 12px;
+      border-right: 1px solid #fff; }
+    .information .info .link .first_link {
+      padding-left: 0; }
+    .information .info .link .last_link {
+      border-right: none; }
+    .information .info .copy {
+      padding-top: 14px;
+      color: #fff;
+      font-size: 12px; }
+
+/*右侧购物栏*/
+.sidebar {
+  width: 40px;
+  height: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #4c4c4c; }
+  .sidebar .account {
+    width: 38px;
+    height: 38px;
+    z-index: 9;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px; }
+    .sidebar .account a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .sidebar .account a i {
+        font-size: 16px;
+        color: #c69a62; }
+  .sidebar .shopingcar {
+    margin: 10px auto;
+    padding: 15px 10px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    height: 90px;
+    text-align: center; }
+    .sidebar .shopingcar a {
+      display: block;
+      font-size: 12px;
+      width: 20px;
+      height: 100px; }
+      .sidebar .shopingcar a i {
+        font-size: 26px;
+        color: #c69a62; }
+      .sidebar .shopingcar a .shopnum {
+        display: block;
+        width: 12px;
+        padding: 0 3px;
+        border-radius: 10px;
+        background: #ec3e7d;
+        color: #fff; }
+  .sidebar .collection {
+    width: 38px;
+    height: 38px;
+    z-index: 9;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px; }
+    .sidebar .collection a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .sidebar .collection a i {
+        font-size: 20px;
+        color: #c69a62; }
+  .sidebar .historical {
+    width: 38px;
+    height: 38px;
+    z-index: 9;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px; }
+    .sidebar .historical a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .sidebar .historical a i {
+        font-size: 20px;
+        color: #c69a62; }
+  .sidebar .iconbottom {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    .sidebar .iconbottom .customer {
+      width: 38px;
+      height: 38px;
+      z-index: 9;
+      cursor: pointer;
+      text-align: center;
+      line-height: 48px; }
+      .sidebar .iconbottom .customer a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .sidebar .iconbottom .customer a i {
+          font-size: 20px;
+          color: #c69a62; }
+    .sidebar .iconbottom .code {
+      width: 38px;
+      height: 38px;
+      z-index: 9;
+      cursor: pointer;
+      text-align: center;
+      line-height: 48px; }
+      .sidebar .iconbottom .code a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .sidebar .iconbottom .code a i {
+          font-size: 20px;
+          color: #c69a62; }
+    .sidebar .iconbottom .code {
+      width: 38px;
+      height: 38px;
+      z-index: 9;
+      cursor: pointer;
+      text-align: center;
+      line-height: 48px; }
+      .sidebar .iconbottom .code a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .sidebar .iconbottom .code a i {
+          font-size: 20px;
+          color: #c69a62; }
+    .sidebar .iconbottom .top {
+      width: 38px;
+      height: 48px;
+      z-index: 9;
+      cursor: pointer;
+      text-align: center;
+      line-height: 48px;
+      margin-bottom: 20px; }
+      .sidebar .iconbottom .top a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .sidebar .iconbottom .top a p {
+          color: #fff;
+          margin-top: -30px; }
+        .sidebar .iconbottom .top a i {
+          font-size: 20px;
+          color: #c69a62; }
+
+/*左侧楼梯*/
+.stairs {
+  width: 55px;
+  height: 248px;
+  position: fixed;
+  top: 40px;
+  left: 28px;
+  z-index: 9999;
+  background: #fff;
+  display: none; }
+  .stairs div {
+    width: 55px;
+    height: 62px;
+    text-align: center;
+    line-height: 56.5px; }
+    .stairs div a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      color: #3e3e3e; }
+      .stairs div a i {
+        display: block;
+        width: 100%;
+        height: 25px;
+        font-size: 25px;
+        margin: 0 auto; }
