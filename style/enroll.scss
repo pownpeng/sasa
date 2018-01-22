@@ -48,15 +48,18 @@
 }
 .en_main{
 	width:830px;
+	overflow:hidden;
 	margin:50px auto 60px;
 	.en_main_form{
 		width:400px;
 		height:570px;
+		float:left;
 		>div{
 			width:398px;
 			height:52px;
 			border:1px solid #ddd;
 			margin-top:32px;
+			position:relative;
 			>div{
 				float:left;
 				width:90px;
@@ -73,11 +76,44 @@
 				border:none;
 				color:#ddd;
 			}
+			>p{
+				position:absolute;
+				top:52px;
+				left:0;
+				color:#ddd;
+				height:19px;
+				width:400px;
+				font-size:12px;
+				display:none;
+			}
 		}
 		.en_username{
 			margin-top:0
 		}
-		button{
+		.en_againsetpassword{
+			img{
+				cursor:pointer;
+				height:52px;
+				width:110px;
+				position:absolute;
+				top:0;
+				right:0;
+			}
+		}
+		.en_againsetpassword{
+			button{
+				cursor:pointer;
+				height:46px;
+				width:110px;
+				background:#f2f2f2;
+				color:#333;
+				border:none;
+				position:absolute;
+				top:3px;
+				right:3px;
+			}
+		}
+		>button{
 			margin-top:32px;
 			width:400px;
 			height:54px;

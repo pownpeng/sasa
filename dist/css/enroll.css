@@ -83,15 +83,18 @@ b, strong, h1, h2, h3, h4, h5, h6 {
 
 .en_main {
   width: 830px;
+  overflow: hidden;
   margin: 50px auto 60px; }
   .en_main .en_main_form {
     width: 400px;
-    height: 570px; }
+    height: 570px;
+    float: left; }
     .en_main .en_main_form > div {
       width: 398px;
       height: 52px;
       border: 1px solid #ddd;
-      margin-top: 32px; }
+      margin-top: 32px;
+      position: relative; }
       .en_main .en_main_form > div > div {
         float: left;
         width: 90px;
@@ -106,9 +109,35 @@ b, strong, h1, h2, h3, h4, h5, h6 {
         padding: 16px 0 11px 20px;
         border: none;
         color: #ddd; }
+      .en_main .en_main_form > div > p {
+        position: absolute;
+        top: 52px;
+        left: 0;
+        color: #ddd;
+        height: 19px;
+        width: 400px;
+        font-size: 12px;
+        display: none; }
     .en_main .en_main_form .en_username {
       margin-top: 0; }
-    .en_main .en_main_form button {
+    .en_main .en_main_form .en_againsetpassword img {
+      cursor: pointer;
+      height: 52px;
+      width: 110px;
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .en_main .en_main_form .en_againsetpassword button {
+      cursor: pointer;
+      height: 46px;
+      width: 110px;
+      background: #f2f2f2;
+      color: #333;
+      border: none;
+      position: absolute;
+      top: 3px;
+      right: 3px; }
+    .en_main .en_main_form > button {
       margin-top: 32px;
       width: 400px;
       height: 54px;
