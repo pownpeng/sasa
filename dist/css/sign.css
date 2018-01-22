@@ -1,0 +1,329 @@
+@charset "UTF-8";
+/* CSS Document */
+body, h1, h3, h2, h4, h5, h6, p, dl, dd, ul, li, ol, td, form, input, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff; }
+
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #666;
+  background: #fff; }
+
+img {
+  display: block; }
+
+a, input {
+  outline: none; }
+
+em, i {
+  font-style: normal; }
+
+b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 545694 */
+  src: url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.eot");
+  src: url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.woff") format("woff"), url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.ttf") format("truetype"), url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.sn_head {
+  width: 100%;
+  height: 110px; }
+  .sn_head .sn_headmid {
+    width: 989px;
+    margin: 0 auto;
+    height: 76px; }
+    .sn_head .sn_headmid > a {
+      display: block;
+      width: 80px;
+      height: 56px;
+      float: left;
+      margin-top: 24px; }
+      .sn_head .sn_headmid > a img {
+        width: 100%;
+        height: 100%; }
+    .sn_head .sn_headmid .sn_welcome {
+      float: left;
+      font-size: 24px;
+      height: 34px;
+      margin-top: 44px;
+      padding-left: 20px;
+      color: #333;
+      line-height: 34px;
+      font-weight: 300; }
+    .sn_head .sn_headmid .sn_account {
+      width: 150px;
+      height: 21px;
+      margin-top: 55px;
+      float: right;
+      font-size: 16px;
+      color: #999;
+      font-weight: 300; }
+      .sn_head .sn_headmid .sn_account i {
+        display: inline-block;
+        width: 18px;
+        height: 14px;
+        margin: 0 5px;
+        background: url(../images/q-icon.png) no-repeat; }
+      .sn_head .sn_headmid .sn_account a {
+        font-size: 14px;
+        color: #666; }
+        .sn_head .sn_headmid .sn_account a:hover {
+          color: red;
+          text-decoration: underline; }
+
+.sn_main {
+  background: #e93854;
+  width: 100%;
+  height: 475px; }
+  .sn_main .sn_main_form {
+    width: 990px;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../images/5a61a049Naf7fdd67.jpg) no-repeat 0 0; }
+    .sn_main .sn_main_form .sn_login {
+      width: 346px;
+      height: 438px;
+      float: right;
+      margin-top: 10px;
+      z-index: 100;
+      position: relative;
+      background: #fff; }
+      .sn_main .sn_main_form .sn_login .sn_notice {
+        width: 100%;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        background: #fff8f0; }
+      .sn_main .sn_main_form .sn_login .sn_mine {
+        width: 307px;
+        height: 298px;
+        padding: 20px; }
+        .sn_main .sn_main_form .sn_login .sn_mine .sn_tab {
+          width: 100%;
+          height: 54px;
+          border-bottom: 1px solid #f4f4f4; }
+          .sn_main .sn_main_form .sn_login .sn_mine .sn_tab .sn_towcode {
+            font-weight: 700;
+            color: #e4393c;
+            font-size: 18px;
+            margin-left: 35px;
+            border-right: 1px solid #f4f4f4;
+            padding-right: 48px; }
+          .sn_main .sn_main_form .sn_login .sn_mine .sn_tab .sn_account {
+            font-weight: 400;
+            color: #666;
+            font-size: 18px;
+            margin-left: 35px; }
+        .sn_main .sn_main_form .sn_login .sn_mine .sn_code {
+          margin-top: 30px;
+          text-align: center; }
+          .sn_main .sn_main_form .sn_login .sn_mine .sn_code img {
+            width: 147px;
+            height: 147px;
+            margin: 0 auto; }
+          .sn_main .sn_main_form .sn_login .sn_mine .sn_code p {
+            margin: 27px auto 20px;
+            color: #000; }
+            .sn_main .sn_main_form .sn_login .sn_mine .sn_code p b {
+              color: #e4393c; }
+          .sn_main .sn_main_form .sn_login .sn_mine .sn_code .sn_list {
+            color: #999;
+            height: 25px;
+            line-height: 25px; }
+            .sn_main .sn_main_form .sn_login .sn_mine .sn_code .sn_list .sn_listli1 {
+              display: inline-block;
+              line-height: 25px;
+              height: 25px; }
+              .sn_main .sn_main_form .sn_login .sn_mine .sn_code .sn_list .sn_listli1 i {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                background: url(../images/qr-coagent.png) no-repeat; }
+            .sn_main .sn_main_form .sn_login .sn_mine .sn_code .sn_list .sn_listli2 {
+              display: inline-block;
+              width: 80px;
+              line-height: 25px;
+              height: 25px; }
+              .sn_main .sn_main_form .sn_login .sn_mine .sn_code .sn_list .sn_listli2 i {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                background: url(../images/qr-coagent.png) no-repeat -27px; }
+            .sn_main .sn_main_form .sn_login .sn_mine .sn_code .sn_list .sn_listli3 {
+              display: inline-block;
+              line-height: 25px;
+              height: 25px; }
+              .sn_main .sn_main_form .sn_login .sn_mine .sn_code .sn_list .sn_listli3 i {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                background: url(../images/qr-coagent.png) no-repeat -54px; }
+        .sn_main .sn_main_form .sn_login .sn_mine .sn_accountuser {
+          margin-top: 30px;
+          text-align: center;
+          display: none; }
+          .sn_main .sn_main_form .sn_login .sn_mine .sn_accountuser .sn_user {
+            border: 1px solid #bdbdbd;
+            width: 304px;
+            height: 38px;
+            margin-bottom: 20px; }
+            .sn_main .sn_main_form .sn_login .sn_mine .sn_accountuser .sn_user .sn_userlogo {
+              display: inline-block;
+              width: 38px;
+              height: 38px;
+              border-right: 1px solid #bdbdbd;
+              background: url(../images/pwd-icons-new.png) no-repeat; }
+            .sn_main .sn_main_form .sn_login .sn_mine .sn_accountuser .sn_user input {
+              border: none;
+              height: 100%;
+              width: 254px;
+              padding-left: 10px;
+              float: right;
+              color: #ddd; }
+          .sn_main .sn_main_form .sn_login .sn_mine .sn_accountuser .sn_password {
+            border: 1px solid #bdbdbd;
+            width: 304px;
+            height: 38px;
+            margin-top: 20px; }
+            .sn_main .sn_main_form .sn_login .sn_mine .sn_accountuser .sn_password .sn_passlogo {
+              display: inline-block;
+              width: 38px;
+              height: 38px;
+              border-right: 1px solid #bdbdbd;
+              background: url(../images/pwd-icons-new.png) no-repeat -48px 0; }
+            .sn_main .sn_main_form .sn_login .sn_mine .sn_accountuser .sn_password input {
+              border: none;
+              height: 100%;
+              width: 254px;
+              padding-left: 10px;
+              float: right;
+              color: #ddd; }
+          .sn_main .sn_main_form .sn_login .sn_mine .sn_accountuser .sn_forget {
+            margin: 20px 0; }
+            .sn_main .sn_main_form .sn_login .sn_mine .sn_accountuser .sn_forget a {
+              float: right;
+              color: #666; }
+          .sn_main .sn_main_form .sn_login .sn_mine .sn_accountuser button {
+            margin-top: 60px;
+            width: 302px;
+            height: 31px;
+            border: 1px solid #e85356;
+            background: #e4393c;
+            color: #fff;
+            font-size: 20px;
+            line-height: 31px;
+            display: block; }
+      .sn_main .sn_main_form .sn_login .sn_lation {
+        height: 45px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 306px;
+        border-top: 1px solid #f4f4f4;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: #fcfcfc; }
+        .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_qq {
+          width: 60px;
+          height: 46px;
+          display: inline-block;
+          line-height: 46px;
+          position: relative; }
+          .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_qq i {
+            margin-top: 12px;
+            width: 20px;
+            height: 25px;
+            display: inline-block;
+            background: url(../images/QQ-weixin.png) no-repeat; }
+          .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_qq a {
+            width: 45px;
+            line-height: 15px;
+            height: 15px;
+            display: inline-block;
+            color: #666;
+            position: absolute;
+            top: 14px;
+            left: 25px;
+            border-right: 1px solid #CCC; }
+            .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_qq a:hover {
+              color: red;
+              text-decoration: underline; }
+        .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_weixin {
+          width: 60px;
+          height: 46px;
+          display: inline-block;
+          position: relative; }
+          .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_weixin i {
+            width: 20px;
+            height: 25px;
+            display: inline-block;
+            background: url(../images/QQ-weixin.png) no-repeat -20px 0px; }
+          .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_weixin a {
+            width: 45px;
+            line-height: 15px;
+            height: 15px;
+            display: inline-block;
+            color: #666;
+            position: absolute;
+            top: 2px;
+            left: 25px; }
+            .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_weixin a:hover {
+              color: red;
+              text-decoration: underline; }
+        .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_enroll {
+          display: inline-block;
+          height: 45px;
+          width: 100px;
+          float: right;
+          line-height: 45px;
+          position: relative; }
+          .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_enroll i {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/pwd-icons-new.png) no-repeat -104px -75px; }
+          .sn_main .sn_main_form .sn_login .sn_lation .sn_mian .sn_enroll a {
+            position: absolute;
+            top: -2px;
+            left: 21px;
+            color: #b61d1d;
+            font-size: 14px;
+            font-weight: 300; }
+
+.footer {
+  width: 989px;
+  margin: 0 auto;
+  margin: 0 auto;
+  height: 88px;
+  padding-bottom: 30px;
+  border-top: 1px solid #e6e6e6; }
+  .footer .sn_links {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center; }
+    .footer .sn_links a {
+      margin: 0 10px;
+      color: #999; }
+  .footer .sn_copy {
+    color: #999;
+    text-align: center;
+    font-size: 12px; }

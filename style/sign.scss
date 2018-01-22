@@ -1,0 +1,343 @@
+@import "reset";
+@mixin wid{
+	width:989px;
+	margin:0 auto;
+}
+.sn_head{
+	width:100%;
+	height:110px;
+	.sn_headmid{
+		@include wid;
+		height:76px;
+		>a{
+			display:block;
+			width:80px;
+			height:56px;
+			float:left;
+			margin-top:24px;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+		.sn_welcome{
+			float:left;
+			font-size:24px;
+			height:34px;
+			margin-top:44px;
+			padding-left:20px;
+			color:#333;
+			line-height:34px;
+			font-weight:300;
+		}
+		.sn_account{
+			width:150px;
+			height:21px;
+			margin-top:55px;
+			float:right;
+			font-size:16px;
+			color:#999;
+			font-weight:300;
+			i{
+				display:inline-block;
+				width:18px;
+				height:14px;
+				margin:0 5px;
+				background:url(../images/q-icon.png) no-repeat;
+			}
+			a{
+				font-size:14px;
+				color:#666;
+				&:hover{
+					color:red;
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+}
+.sn_main{
+	background:#e93854;
+	width:100%;
+	height:475px;
+	.sn_main_form{
+		width:990px;
+		height:100%;
+		margin:0 auto;
+		background:url(../images/5a61a049Naf7fdd67.jpg)  no-repeat 0 0;
+		.sn_login{
+			width:346px;
+			height:438px;
+			float:right;
+			margin-top:10px;
+			z-index:100;
+			position:relative;
+			background:#fff;
+			.sn_notice{
+				width:100%;
+				height:20px;
+				padding-top:10px;
+				padding-bottom:10px;
+				text-align:center;
+				background:#fff8f0;
+			}
+			.sn_mine{
+				width:307px;
+				height:298px;
+				padding:20px;
+				.sn_tab{
+					width:100%;
+					height:54px;
+					border-bottom:1px solid #f4f4f4;
+					.sn_towcode{
+						font-weight:700;
+						color:#e4393c;
+						font-size:18px;
+						margin-left:35px;
+						border-right:1px solid #f4f4f4; 
+						padding-right:48px;
+					}
+					.sn_account{
+						font-weight:400;
+						color:#666;
+						font-size:18px;
+						margin-left:35px;
+					}
+				}
+				.sn_code{
+					margin-top:30px;
+					text-align:center;
+					img{
+						width:147px;
+						height:147px;
+						margin:0 auto;
+					}
+					p{
+						margin:27px auto 20px;
+						color:#000;
+						b{
+							color:#e4393c;
+						}
+					}
+					.sn_list{
+						color:#999;
+						height:25px;
+						line-height:25px;
+						.sn_listli1{
+							display:inline-block;
+							line-height:25px;
+							height:25px;
+							i{
+								display:inline-block;
+								width:25px;
+								height:25px;
+								background:url(../images/qr-coagent.png) no-repeat;
+							}
+						}
+						.sn_listli2{
+							display:inline-block;
+							width:80px;
+							line-height:25px;
+							height:25px;
+							i{
+								display:inline-block;
+								width:25px;
+								height:25px;
+								background:url(../images/qr-coagent.png) no-repeat -27px;
+							}
+						}
+						.sn_listli3{
+							display:inline-block;
+							line-height:25px;
+							height:25px;
+							i{
+								display:inline-block;
+								width:25px;
+								height:25px;
+								background:url(../images/qr-coagent.png) no-repeat -54px;
+							}
+						}
+					}
+				}
+				.sn_accountuser{
+					margin-top:30px;
+					text-align: center;
+					display:none;
+					.sn_user{
+						border:1px solid #bdbdbd;
+						width:304px;
+						height:38px;
+						margin-bottom:20px;
+						.sn_userlogo{
+							display:inline-block;
+							width:38px;
+							height:38px;
+							border-right:1px solid #bdbdbd;
+							background:url(../images/pwd-icons-new.png) no-repeat;
+						}
+						input{
+							border:none;
+							height:100%;
+							width:254px;
+							padding-left:10px;
+							float:right;
+							color:#ddd;
+						}
+					}
+					.sn_password{
+						border:1px solid #bdbdbd;
+						width:304px;
+						height:38px;
+						margin-top:20px;
+						.sn_passlogo{
+							display:inline-block;
+							width:38px;
+							height:38px;
+							border-right:1px solid #bdbdbd;
+							background:url(../images/pwd-icons-new.png) no-repeat -48px 0; 
+						}
+						input{
+							border:none;
+							height:100%;
+							width:254px;
+							padding-left:10px;
+							float:right;
+							color:#ddd;
+						}
+					}
+					.sn_forget{
+						margin:20px 0;
+						a{
+							float:right;
+							color:#666;
+						}
+					}
+					button{
+						margin-top:60px;
+						width:302px;
+						height:31px;
+						border:1px solid #e85356;
+						background:#e4393c;
+						color:#fff;
+						font-size:20px;
+						line-height:31px;
+						display:block;
+					}
+				}
+			}
+			.sn_lation{
+				height:45px;
+				position:absolute;
+				bottom:0;
+				left:0;
+				width:306px;
+				border-top:1px solid #f4f4f4;
+				padding-left:20px;
+				padding-right:20px;
+				background:#fcfcfc;
+				.sn_mian{
+					.sn_qq{
+						width:60px;
+						height:46px;
+						display:inline-block;
+						line-height:46px;
+						position:relative;
+						i{
+							margin-top:12px;
+							width:20px;
+							height:25px;
+							display:inline-block;
+							background:url(../images/QQ-weixin.png) no-repeat;
+						}
+						a{
+							width:45px;
+							line-height:15px;
+							height:15px;
+							display:inline-block;
+							color:#666;
+							position:absolute;
+							top:14px;
+							left:25px;
+							border-right:1px solid #CCC;
+							&:hover{
+								color:red;
+								text-decoration:underline;
+							}
+						}
+					}
+					.sn_weixin{
+						width:60px;
+						height:46px;
+						display:inline-block;
+						position:relative;
+						i{
+							width:20px;
+							height:25px;
+							display:inline-block;
+							background:url(../images/QQ-weixin.png) no-repeat -20px 0px;
+						}
+						a{
+							width:45px;
+							line-height:15px;
+							height:15px;
+							display:inline-block;
+							color:#666;
+							position:absolute;
+							top:2px;
+							left:25px;
+							&:hover{
+								color:red;
+								text-decoration:underline;
+							}
+						}
+					}
+					.sn_enroll{
+						display:inline-block;
+						height:45px;
+						width:100px;
+						float:right;
+						line-height:45px;
+						position:relative;
+						i{
+							display:inline-block;
+							width:16px;
+							height:16px;
+							background-image:url(../images/pwd-icons-new.png) no-repeat -104px -75px;
+						}
+						a{
+							position:absolute;
+							top:-2px;
+							left:21px;
+							color:#b61d1d;
+							font-size:14px;
+							font-weight:300;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.footer{
+	@include wid;
+	margin:0 auto;
+	height:88px;
+	padding-bottom:30px;
+	border-top:1px solid #e6e6e6;
+	.sn_links{
+		padding-top:30px;
+		padding-bottom:15px;
+		text-align:center;
+		a{
+			margin:0 10px;
+			color:#999;
+		}
+	}
+	.sn_copy{
+		color:#999;
+		text-align:center;
+		font-size:12px;
+	}
+}
