@@ -13,7 +13,7 @@ define(["jquery"],function(){
 			var _this=this;
 			$.ajax({
 				url: 'json/mustcheck.json',
-				type: 'GEt',
+				type: 'GEt'
 			})
 			.then(function(res) {
 				_this.create(res)

@@ -6,7 +6,7 @@ require.config({  //配置文件模块
 		"limit":"script/limitedoffer",
 		"ranklist":"script/ranklist",
 		"newbase":"script/newbase",
-		"stairs":"script/stairs"
+		"stairs":"script/stairs",
+		"banner":"script/banner"
 	}
-
 })

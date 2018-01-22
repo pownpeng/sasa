@@ -1,9 +1,13 @@
 require(["script/config.js"],function(){  //逻辑调用模块
-	require(["jquery","cookie","mustcheck","limit","ranklist","newbase","stairs"],function($,cookie,mustcheck,limit,ranklist,newbase,stairs){
+	require(["jquery","cookie","mustcheck","limit","ranklist","newbase","stairs","banner"],function($,cookie,mustcheck,limit,ranklist,newbase,stairs,banner){
 		mustcheck.init($(".must_check_container"));
 		limit.init($(".limitcommodity"));
 		ranklist.init($(".ranklist"));
-		newbase.init($(".newlist"));
-		stairs.init()
+		newbase.init($(".newlist"));   //上面都是请求json数据和进行字符串拼接,以及一些小特效
+		stairs.init();        //楼梯
+		banner.init()
+
+
+
 	})
 })

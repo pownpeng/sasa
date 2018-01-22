@@ -312,8 +312,29 @@ body{
 						width:100%;
 						height:450px;
 						margin:0 auto;
+					}
+					.ban1{
 						background:url("../images/9a6c9718827be1538a7092609738409fe04a265f.jpg") no-repeat top center;
 					}
+					.ban2{
+						background:url("../images/0bd4930d06ee8d166f7ba6cf0a61947d0af535a2.jpg") no-repeat top center;
+					}
+					.ban3{
+						background:url("../images/bebbf1e72db1846b00bac8746772b3e4bfe0eaf1.jpg") no-repeat top center;
+					}
+					.ban4{
+						background:url("../images/34ca4ffcd7471264c47008941863ea3c87fff4b3.jpg") no-repeat top center;
+					}
+					.ban5{
+						background:url("../images/74d4c5a5ef1dd4d552c8bacf139f9724d9b987bb.jpg") no-repeat top center;
+					}
+					.ban6{
+						background:url("../images/f7a55f6c57f29e51c89cbb9835150898a3716b57.jpg") no-repeat top center;
+					}
+				}
+				.first{
+					z-index:1;
+					opacity:1;
 				}
 			}
 		}
@@ -1308,9 +1329,10 @@ body{
 .stairs{
 	width:55px;
 	height:248px;
-	position:fixed;
-	top:40px;
-	left:28px;
+	position:absolute;
+	top:630px;
+	left:30px;
+	margin-left:-75px;
 	z-index:9999;
 	background:#fff;
 	display:none;
