@@ -6,7 +6,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;2.登录注册页 ：需要使用正则匹配输入框中的字符串<br />
 &nbsp;&nbsp;&nbsp;&nbsp;3.列表页/详情页 ：需要实现分页效果和放大镜等效果<br />
 &nbsp;&nbsp;&nbsp;&nbsp;4.购物车 ：需要记录点击的商品<br />
-&nbsp;&nbsp;&nbsp;&nbsp;5.购物结算 ：需要计算每个商品的数量和价格<br />
+&nbsp;&nbsp;&nbsp;&nbsp;5.购物结算 ：需要计算每个商品的数量和总价格<br />
 <hr>
 用到的技术栈:require.js,sass,jQuery.js  <br />
 <hr>
