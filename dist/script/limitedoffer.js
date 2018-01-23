@@ -94,7 +94,7 @@ define(["jquery"],function(){     //功能模块
 									+"<span>"+data[i].soldnum+"</span>"
 									+"件"
 								+"</div>"
-								+"<span class="+"limitbtn"+">"+"马上抢"+"</span>"
+								+"<button class="+"limitbtn"+" data-id="+data[i].data+">"+"马上抢"+"</button>"
 							+"</div>"
 						+"</div>"
 					+"</a>"

@@ -48,15 +48,18 @@
 }
 .en_main{
 	width:830px;
+	overflow:hidden;
 	margin:50px auto 60px;
 	.en_main_form{
 		width:400px;
 		height:570px;
+		float:left;
 		>div{
 			width:398px;
 			height:52px;
 			border:1px solid #ddd;
 			margin-top:32px;
+			position:relative;
 			>div{
 				float:left;
 				width:90px;
@@ -73,11 +76,44 @@
 				border:none;
 				color:#ddd;
 			}
+			>p{
+				position:absolute;
+				top:52px;
+				left:0;
+				color:#ddd;
+				height:19px;
+				width:400px;
+				font-size:12px;
+				display:none;
+			}
 		}
 		.en_username{
 			margin-top:0
 		}
-		button{
+		.en_againsetpassword{
+			img{
+				cursor:pointer;
+				height:52px;
+				width:110px;
+				position:absolute;
+				top:0;
+				right:0;
+			}
+		}
+		.en_againsetpassword{
+			button{
+				cursor:pointer;
+				height:46px;
+				width:110px;
+				background:#f2f2f2;
+				color:#333;
+				border:none;
+				position:absolute;
+				top:3px;
+				right:3px;
+			}
+		}
+		>button{
 			margin-top:32px;
 			width:400px;
 			height:54px;
@@ -89,5 +125,100 @@
 			text-align:center;
 			cursor:pointer;
 		}
+	}
+	.en_other{
+		margin-left:104px;
+		height:605px;
+		float:left;
+		padding-left:90px;
+		border-left:1px solid #e6e6e6;
+		.en_enterprise{
+			width:160px;
+			height:60px;
+			border-bottom:1px solid #ddd;
+			margin-left:30px;
+			a{
+				display:block;
+				width:160px;
+				height:30px;
+				color:#666;
+				font-size:14px;
+				font-weight:300;
+				i{
+					display:inline-block;
+					width:30px;
+					height:29px;
+					margin-right:15px;
+					background:url(../images/icon.png) no-repeat 0 -50px;
+				}
+				&:hover{
+						text-decoration:underline;
+						color:#000;
+						font-weight:bold;
+				}
+			}
+		}
+		.en_global{
+			width:160px;
+			height:60px;
+			margin-left:30px;
+			margin-top:30px;
+			a{
+				display:block;
+				width:170px;
+				height:40px;
+				color:#666;
+				font-size:14px;
+				i{
+					margin-left:0px;
+					margin-top:0px;
+					display:inline-block;
+					width:30px;
+					height:29px;
+					margin-right:15px;
+					background:url(../images/icon.png) no-repeat -50px -50px;
+				}
+				span{
+					display:inline-block;
+					&:hover{
+						font-weight:bold;
+					}
+				}
+			}
+		}
+	}
+}
+.footer{
+	@include wid;
+	margin:0 auto;
+	height:88px;
+	padding-bottom:30px;
+	border-top:1px solid #e6e6e6;
+	.en_links{
+		padding-top:30px;
+		padding-bottom:15px;
+		text-align:center;
+		a{
+			margin:0 10px;
+			color:#999;
+		}
+	}
+	.en_copy{
+		color:#999;
+		text-align:center;
+		font-size:12px;
+	}
+}
+.en_feedback{
+	display:block;
+	position:fixed;
+	top:50%;
+	margin-top:-85px;
+	right:0;
+	width:33px;
+	height:135px;
+	background:url(../images/icon.png) no-repeat -367px 0;
+	&:hover{
+		background-position:-334px 0;
 	}
 }

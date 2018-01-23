@@ -575,7 +575,8 @@ body {
         background: #e93b78;
         color: #fff;
         font-size: 16px;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        border: none; }
 
 .limit .muchselling {
   text-align: center;

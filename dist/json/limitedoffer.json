@@ -7,8 +7,8 @@
 	"price":"165",
 	"oldprice":"215",
 	"soldnum":"0",
-	"sale":"7.7"
-
+	"sale":"7.7",
+	"data":"13"
 	},
 	{
 	"url":"http://www.sasa.com/seckill-372762.html?cm_re=cn_limited_offer",
@@ -18,7 +18,8 @@
 	"price":"69",
 	"oldprice":"170",
 	"soldnum":"3",
-	"sale":"4.1"
+	"sale":"4.1",
+	"data":"14"
 	},
 	{
 	"url":"http://www.sasa.com/seckill-372816.html?cm_re=cn_limited_offer",
@@ -28,7 +29,8 @@
 	"price":"240",
 	"oldprice":"540",
 	"soldnum":"1",
-	"sale":"4.4"
+	"sale":"4.4",
+	"data":"15"
 	},
 	{
 	"url":"http://www.sasa.com/seckill-372877.html?cm_re=cn_limited_offer",
@@ -38,7 +40,8 @@
 	"price":"89",
 	"oldprice":"250",
 	"soldnum":"0",
-	"sale":"3.6"
+	"sale":"3.6",
+	"data":"16"
 	},
 	{
 	"url":"http://www.sasa.com/seckill-373066.html?cm_re=cn_limited_offer",
@@ -48,7 +51,8 @@
 	"price":"75",
 	"oldprice":"88",
 	"soldnum":"0",
-	"sale":"8.5"
+	"sale":"8.5",
+	"data":"17"
 	},
 	{
 	"url":"http://www.sasa.com/seckill-372893.html?cm_re=cn_limited_offer",
@@ -58,7 +62,8 @@
 	"price":"185",
 	"oldprice":"360",
 	"soldnum":"0",
-	"sale":"5.1"
+	"sale":"5.1",
+	"data":"18"
 	},
 	{
 	"url":"http://www.sasa.com/seckill-372885.html?cm_re=cn_limited_offer",
@@ -68,7 +73,8 @@
 	"price":"175",
 	"oldprice":"369",
 	"soldnum":"0",
-	"sale":"4.7"
+	"sale":"4.7",
+	"data":"19"
 	},
 	{
 	"url":"http://www.sasa.com/seckill-372865.html?cm_re=cn_limited_offer",
@@ -78,7 +84,8 @@
 	"price":"49",
 	"oldprice":"120",
 	"soldnum":"2",
-	"sale":"4.1"
+	"sale":"4.1",
+	"data":"20"
 	},
 	{
 	"url":"http://www.sasa.com/seckill-372800.html?cm_re=cn_limited_offer",
@@ -88,7 +95,8 @@
 	"price":"197",
 	"oldprice":"299",
 	"soldnum":"0",
-	"sale":"6.6"
+	"sale":"6.6",
+	"data":"21"
 	},
 	{
 	"url":"http://www.sasa.com/seckill-372736.html?cm_re=cn_limited_offer",
@@ -98,6 +106,7 @@
 	"price":"95",
 	"oldprice":"149",
 	"soldnum":"3",
-	"sale":"6.4"
+	"sale":"6.4",
+	"data":"22"
 	}
 ]
