@@ -1212,6 +1212,141 @@ body{
 				color:#fff;
 			}
 		}
+		.shopcarlist{
+				width:300px;
+				height:100%;
+				position:fixed;
+				top:0;
+				right:38px;
+				background:#fff;
+				border:1px solid #eaeaea;
+				.cart_title{
+					height:40px;
+					line-height:40px;
+					font-size:12px;
+					color:#333;
+					padding-left:15px;
+					border-bottom:1px solid #eaeaea;
+					position:relative;
+					text-align:left;
+					.cart_close{
+						position:absolute;
+						top:50%;
+						margin-top:-10px;
+						right:12px;
+						background:#fff;
+						border:none;
+						i{
+							color:#333;
+							font-size:16px;
+						}
+					}
+				}
+				.cart_shop{
+					width:300px;
+					height:70%;
+					min-height: 300px;
+					overflow:hidden;
+					.cart_choice{
+						position:relative;
+						width:280px;
+						height:36px;
+						line-height:36px;
+						padding-left:20px;
+						text-align: left;
+						background:#f2f2f2;
+						border-bottom:1px solid #ebebeb;
+						border-top:1px solid #ebebeb;
+						input{
+							position:absolute;
+							top:50%;
+							left:10px;
+							margin-top:-5px;
+						}
+						span{
+							font-size:14px;
+							font-weight:bold;
+							margin-left:10px;
+						}
+					}
+					.cart_shop_list{
+						position:relative;
+						width:240px;
+						height:80px;
+						padding-left:60px;
+						margin-top:10px;
+						input{
+							position:absolute;
+							top:50%;
+							left:30px;
+							margin-top:-10px;
+						}
+						.cart_shop_item{
+							text-align: left;
+							img{
+								width:70px;
+								height:70px;
+								float:left;
+							}
+							p{
+								margin-left:80px;
+								color:#333;
+								display:block;
+								font-size:14px;
+								text-align:left;
+								margin-bottom:10px;
+								overflow:hidden; 
+								text-overflow:ellipsis;
+								display:-webkit-box;
+								-webkit-box-orient:vertical;
+								-webkit-line-clamp:2;
+							}
+							.price{
+								color:#ec3e7d;
+								font-weight:bold;
+								margin-left: 10px;
+								margin-right:40px;
+							}
+							.number{
+								font-size:12px
+							}
+							i{
+								color:#c69a62;
+								font-size:20px;
+								float:right;
+								margin-right:10px;
+								cursor:pointer;
+							}
+						}
+					}
+					.cart_item_list{
+						width:auto;
+						height:auto
+					}
+				}
+			.cart_checkout{
+				position:absolute;
+				bottom:20px;
+				left:20px;
+				p{
+					width:260px;
+					color:#666;
+					font-size:14px;
+					margin-bottom:10px;
+					span{
+						color:#ec3e7d;
+					}
+				}
+				button{
+					width:260px;
+					height:40px;
+					background:#ec3e7d;
+					color:#fff;
+					text-align:center;
+					border:none;
+				}
+			}	
+		}
 	}
 	.collection{
 		width:38px;

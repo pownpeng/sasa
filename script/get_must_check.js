@@ -29,7 +29,7 @@ define(["jquery"],function(){
 						  +"<p class="+'must_check_title'+">"+data[i].title+"</p>"
 						  +"<p class="+'must_check_subtit'+">"+data[i].subtit+"</p>"
 						  +"<p class="+'must_check_date'+">"+data[i].date+"</p>"
-					 	  +"<button class="+'must_check_btn'+" data-id="+data[i].data+">"+"加入购物车"+"</button>"
+					 	  +"<button class="+'must_check_btn'+" data-id="+data[i].data+">"+"立即抢购"+"</button>"
 					 	 +"</div>"
 					 	 +"</div>"
 					 	 +"</a>"

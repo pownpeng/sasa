@@ -1,5 +1,5 @@
 require(["script/config.js"],function(){  //逻辑调用模块
-	require(["jquery","cookie","mustcheck","limit","ranklist","newbase","stairs","banner","shopcar","cookie"],function($,cookie,mustcheck,limit,ranklist,newbase,stairs,banner,shopcar,cookie){
+	require(["jquery","cookie","mustcheck","limit","ranklist","newbase","stairs","banner","shopcar","cookie","shoplist","effect"],function($,cookie,mustcheck,limit,ranklist,newbase,stairs,banner,shopcar,cookie,shoplist,effect){
 		mustcheck.init($(".must_check_container"));
 		limit.init($(".limitcommodity"));
 		ranklist.init($(".ranklist"));
@@ -7,5 +7,7 @@ require(["script/config.js"],function(){  //逻辑调用模块
 		stairs.init();        //楼梯
 		banner.init();
 		shopcar.init();
+		shoplist.init();
+		effect.init()
 	})
 })

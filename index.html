@@ -13,9 +13,9 @@
      				<span>
      					欢迎光临莎莎官网!
      				</span>
-     				<a href="#" class="login">登录</a>
+     				<a href="localhost:8888/sign.html" class="login">登录</a>
      				<span>或</span>
-     				<a href="#">免费注册</a>
+     				<a href="localhost:8888/enroll.html">免费注册</a>
      			</span>
      		</div>
 			<div id="bar">
@@ -310,7 +310,29 @@
                <a href="#"><i class="iconfont">&#xe80a;</i></a>
           </div>
           <div class="shopingcar">
-               <a href="#javascript"><i class="iconfont">&#xe673;</i>购物车<span class="shopnum">0</span></a>
+               <a href="#javascript" class="closeshop">
+                    <i class="iconfont">&#xe673;</i>购物车<span class="shopnum">0</span>
+               </a>
+                     <div class="shopcarlist" style="display:none">  <!--购物车列表-->
+                         <div class="cart_title">
+                               购物车
+                              <button class="cart_close"><i class="iconfont">&#xe602;</i></button>
+                          </div>
+                          <div class="cart_shop">
+                              <div class="cart_choice">
+                                   <input class="cart_checkbox" type="checkbox" checked="checked">
+                                   <span>全选</span>
+                              </div>
+                              <!--购物车-->
+                              <div class="cart_item_list">
+                                   
+                              </div>
+                          </div>
+                          <div class="cart_checkout">
+                               <p class="cart_info">共<span></span>件商品,价值<span></span></p>
+                               <button>去结算</button>
+                          </div>
+                    </div>
           </div>
           <div class="collection">
                <a href="#"><i class="iconfont">&#xe668;</i></a> 
