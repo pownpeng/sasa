@@ -8,6 +8,7 @@ require.config({  //配置文件模块
 		"newbase":"script/newbase",
 		"stairs":"script/stairs",
 		"banner":"script/banner",
-		"shopcar":"script/shoppingcar"
+		"shopcar":"script/shoppingcar",
+		"cookie":"script/cookie"
 	}
 })
