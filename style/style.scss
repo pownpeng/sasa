@@ -41,8 +41,8 @@ body{
 		#bar{
 			float:right;
 			text-align:right;
-			ul{
-				li{
+			>ul{
+				>li{
 					border:none;
 					display:inline-block;
 					height:32px;
@@ -57,6 +57,18 @@ body{
 							margin-right:3px;
 							font-weight:bold;
 						}
+					}
+					ul{
+						width:86px;
+						padding:0;
+						background:#fff;
+						z-index:10000;
+						height:0;
+						text-align:left;
+						overflow:hidden;
+						position:absolute;
+						top:32px;
+						left:0;
 					}
 				}
 			}
@@ -171,8 +183,8 @@ body{
 			#sasacategory{
 				position:absolute;
 				top:36px;
-				ul{
-					li{
+				>ul{
+					>li{
 						width:162px;
 						height:29px;
 						padding:11px 14px;
@@ -233,6 +245,36 @@ body{
 							background-repeat:no-repeat;
 							background-position:0 -237px;
 						}
+						ul{
+							display:none;
+							width:340px;
+							height:auto;
+							background:#fff;
+							padding:10px 25px;
+							overflow:hidden;
+							border:1px solid #fa3778;
+							position:absolute;
+							left:190px;
+							top:0px;
+							>li{
+								height:81px;
+								width:100%;
+								p{
+									font-size:14px;
+									font-weight:bold;
+									color:#555;
+								}
+								span{
+									font-size:12px;
+									color:#999;
+									padding:0 5px;
+									display:inline-block;
+									cursor:pointer;
+									line-height:24px;
+									text-align:center;
+								}
+							}
+						}
 					}
 					.catehalf{
 						height:30px;
@@ -291,12 +333,16 @@ body{
 	width:100%;
 	margin:0 auto;
     background:#e7ddd4;
+    position:relative;
 	.box{
 		height:420px;
 		overflow: hidden;
-		position:relative;
-		ol{
-			a{
+		width:1578px;
+		position:absolute;
+		top:0;
+		left:50%;
+		margin-left:-789px;
+		ul{
 				li{
 					position:absolute;
 					top:0;
@@ -308,61 +354,14 @@ body{
 					overflow: hidden;
 					border:0;
 					margin:0;
-					div{
+					img{
+						height:420px;
 						width:100%;
-						height:450px;
-						margin:0 auto;
+						margin: 0 auto;
 					}
-					.ban1{
-						background:url("../images/9a6c9718827be1538a7092609738409fe04a265f.jpg") no-repeat top center;
-					}
-					.ban2{
-						background:url("../images/0bd4930d06ee8d166f7ba6cf0a61947d0af535a2.jpg") no-repeat top center;
-					}
-					.ban3{
-						background:url("../images/bebbf1e72db1846b00bac8746772b3e4bfe0eaf1.jpg") no-repeat top center;
-					}
-					.ban4{
-						background:url("../images/34ca4ffcd7471264c47008941863ea3c87fff4b3.jpg") no-repeat top center;
-					}
-					.ban5{
-						background:url("../images/74d4c5a5ef1dd4d552c8bacf139f9724d9b987bb.jpg") no-repeat top center;
-					}
-					.ban6{
-						background:url("../images/f7a55f6c57f29e51c89cbb9835150898a3716b57.jpg") no-repeat top center;
-					}
-				}
-				.first{
-					z-index:1;
-					opacity:1;
 				}
 			}
 		}
-		#imgnav{
-			ul{
-				position:absolute;
-				z-index:60;
-				bottom:10px;
-				left:50%;
-				margin-left:-105px;
-				li{
-					float:left;
-					background:#333;
-					opacity:0.4;
-					width:15px;
-					height:15px;
-					border-radius:50%;
-					margin-left:7px;
-					margin-right:7px;
-					border:3px solid rgba(255,255,255,0.7)
-				}
-				.active{
-					background:#fa3778;
-					opacity:1;
-				}
-			}
-		}
-	}
 }
 /*公告栏*/
 .notice{

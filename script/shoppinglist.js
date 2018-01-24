@@ -4,7 +4,8 @@ define(["jquery","cookie"],function(){   //读取cookie模块
 	}
 	Shoplist.prototype={
 		constructor:Shoplist,
-		init:function(){
+		init:function(dom){
+			this.dom=dom
 			this.turn=$(".closeshop");
 			this.shopingcar=$(".shopcarlist");
 			this.close=$(".cart_close");
@@ -24,7 +25,17 @@ define(["jquery","cookie"],function(){   //读取cookie模块
 				}else{
 					return 0;
 				}
-			})
+			});
+			if(this.dom!=undefined){
+				setTimeout(function(){
+					$("button",this.dom).on("click",function(){
+						_this.shopingcar.css({
+							display:"none"
+						})
+						_this.count=0;
+					})
+				},1000)
+			}
 			this.close.on("click",function(){
 				_this.shopingcar.css({
 					display:"none"

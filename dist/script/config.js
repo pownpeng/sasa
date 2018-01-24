@@ -9,8 +9,8 @@ require.config({  //配置文件模块
 		"stairs":"script/stairs",
 		"banner":"script/banner",
 		"shopcar":"script/shoppingcar",
-		"cookie":"script/cookie",
 		"shoplist":"script/shoppinglist",
-		"effect":"script/effect"
+		"effect":"script/effect",
+		"motion":"script/motion"
 	}
 })

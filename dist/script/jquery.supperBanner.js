@@ -1,13 +1,30 @@
 
+
+		/*
+		v:0.9.0
+		轮播图插件;    把这个插件绑定到jQuery中,所以调用的时候直接调用$().supperbanner就行
+		src:[]         必选参数:传入图片链接数组;
+		create_btn     默认为true,是否创建控空间 激活按钮用 class supperbanner_active;
+		movement_mode  运动模式默认为 fade 提供选项 slide scroll 
+		autoplay       默认为false,自动播放选项;
+		
+
+		__by:huaizhi 2018年1月10日15:51:39
+	*/
 (function (factory) {
 	if (typeof define === 'function' && define.amd) {
+		// AMD
 		define(['jquery'], factory);
 	} else if (typeof exports === 'object') {
+		// CommonJS
 		factory(require('jquery'));
 	} else {
+		// Browser globals
 		factory(jQuery);
 	}
 })((function($,window){
+
+		//默认参数;
 		var defaults = {
 			src:[],
 			create_btn:true,
@@ -15,9 +32,9 @@
 			autoplay:false
 		}
 
-		var index = 0;
-		var prev = 0;
-		var next = 0;
+		var index = 0;//默认显示的图片;
+		var prev = 0; //上一张图片;
+		var next = 0; //下一张图片;
 		var out = 0;
 
 		function Banner(opts,ele){
@@ -26,17 +43,27 @@
 		Banner.prototype = {
 			constructor:Banner,
 			init:function(opts,ele){
+				// 参数判断;
+				// 让 opt 一定为大于1项的数组;
 				if(!(opts instanceof Object) || opts==undefined || opts == "string"){
 					throw "请输入正确的配置参数，要求配置参数为Object类型";
 				} 
 				if(!(opts.src instanceof Array)){
 					throw "请输入正确的src配置,src必须为大于1项的数组";
 				}
+				//参数合并;
 				this.opts = $.extend(defaults,opts);
 				this.ele = ele;
 				this.callme = "";
 				this.rendring_pag();
+				//console.log(this.$ul,this.$btn_box);
 				this.$btn_box.children().on("mouseenter",$.proxy(this.moveTo,this))
+				/*
+					{
+						"mosueover":function(){},
+						"mosueout":function(){}
+					}
+				*/
 				if(this.opts.autoplay){
 					this.autoplay();
 				}
@@ -44,16 +71,17 @@
 			moveTo:function(e){
 				if(e instanceof Object){
 					var $btn = $(e.target);
-					out = index;
+					out = index;//决定谁出厂;
 					if(index == $btn.index()){
 						return 0;
 					}
-					index = $btn.index();
+					index = $btn.index();//获取当前下标;
 					this.callme = "event";
 				}else{
 					var $btn = this.$btn_box.children().eq(index);
 					this.callme = "interval";
 				}
+				
 				$btn.addClass("supperbanner_active")
 				.siblings()
 				.removeClass("supperbanner_active");
@@ -64,6 +92,7 @@
 				}
 			},
 			rendring_pag:function(){
+				//和forEach一样;
 				this.$ul = $("<ul></ul>");
 				//装按钮的盒子;
 				var $btn_box = $("<div></div>");
@@ -191,7 +220,7 @@
 					_this.rangIndex();
 					//console.log(index,prev,next);
 					_this.moveTo();
-				},3000)
+				},2000)
 			},
 			rangIndex:function(){
 				//1.计算出 上一张;

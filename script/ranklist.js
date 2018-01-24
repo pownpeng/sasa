@@ -1,4 +1,4 @@
-define(["jquery"],function(){
+define(["jquery"],function(){    //首页json请求模块
 	function Ranklist(){
 		//console.log(1)
 	}

@@ -2,7 +2,7 @@
 	display:none;
 }
 .se_container{
-	height:1000px;
+	height:800px;
 	width:1200px;
 	margin:0 auto;
 	.se_title{
@@ -63,6 +63,7 @@
 			width:550px;
 			height:100%;
 			float:left;
+			position:relative;
 			i{
 				display:block;
 				width:68px;
@@ -81,9 +82,44 @@
 				width:300px;
 				height:300px;
 				margin:0 auto;
+				position:relative;
+				.se_wrap{
+					width:100%;
+					height:100%;
+					position:absolute;
+					top:0;
+					left:0;
+					z-index:999;
+				}
 				img{
 					width:300px;
 					height:300px;
+				}
+				#se_mag{
+					background:#B3D5FF;
+					opacity:0.5;
+					z-index:200;
+					cursor:move;
+					display:none;
+					z-index:200;
+					position:absolute;
+				}
+				#se_bag{
+					width:300px;
+					height:300px;
+					display:block;
+					overflow:hidden;
+					display:none;
+					position:absolute;
+					top:0px;
+					left:450px;
+					background:#fff;
+					border:1px solid #ddd;
+					.se_bgimg{
+						width:300%;
+						height:300%;
+						position:absolute;
+					}
 				}
 			}
 			.se_country{
@@ -135,6 +171,297 @@
 				text-align:left;
 				color:#3e3e3e;
 				padding-bottom:30px;
+			}
+			.se_sebli1{
+				color:#3e3e3e;
+				font-size:26px;
+				height:26px;
+				font-size:18px;
+			}
+			.se_sebli2{
+				color:#505a64;
+				font-size:18px;
+				line-height:26px;
+				height:26px;
+			}
+			.se_much{
+				height:26px;
+				color:#3e3e3e;
+				font-size:14px;
+				margin-top:20px;
+				margin-bottom:20px;
+				a{
+					font-size:14px;
+					display:inline-block;
+					width:20px;
+					height:20px;
+					background:#ddd;
+					color:#fff;
+					text-align:center;
+				}
+				.se_jian{
+					margin-left:30px;
+				}
+				input{
+					width:30px;
+					height:21px;
+					line-height:21px;
+					border:1px solid #f2f2f2;
+					text-align:center;
+					margin-left:5px;
+					margin-right:5px;
+				}
+			}
+			.se_price{
+				color:#222;
+				font-size:16px;
+				.se_newprice{
+					font-size:24px;
+					color:red;
+					font-weight:600;
+				}
+				.se_oldprice{
+					font-size: 16px;
+					margin-left:10px;
+					color:#d3d3d3;
+					text-decoration: line-through;
+				}
+			}
+			.se_add{
+				margin-top:20px;
+				margin-bottom:20px;
+				.se_shopcar{
+					width:120px;
+					height:50px;
+					border:none;
+					background:#fe3432;
+					color:#fff;
+					font-size:16px;
+					text-align:center;
+					line-height:50px;
+					margin-right:20px;
+				}
+				.se_sao{
+					display:inline-block;
+					width:190px;
+					height:50px;
+					line-height:50px;
+					text-align:center;
+					color:#999999;
+					background:#fff;
+					border:1px solid #dedede;
+				}	
+			}
+			.se_score{
+				color:#3e3e3e;
+				margin-bottom:30px;
+				i{
+					color:#fe3443;
+				}
+			}
+			.se_collection{
+				border-top:1px solid #dfdfdf;
+				padding-top:30px;
+				.se_collectionspan{
+					color:#666;
+					padding:0 3px;
+				}
+				.se_share{
+					float:right;
+					strong{
+						color:#3e3e3e;
+					}
+				}
+			}
+		}
+	}
+}
+.se_reviews{
+	width:1200px;
+	height:1204px;
+	margin:0 auto;
+	padding-top:20px;
+	margin-bottom:20px;
+	.se_recommend{
+		width:253px;
+		height:596px;
+		background:#fff;
+		float:left;
+		.se_recommend_title{
+			height:50px;
+			line-height:50px;
+			border-left:5px solid #c69a62;
+			border-bottom:1px solid #ebebeb;
+			color:#585c65;
+			font-size:18px;
+			padding-left:12px;
+		}
+		ul{
+			li{
+				height:69px;
+				border-top:1px solid #d4d4d4;
+				padding:20px 10px;
+				img{
+					width:69px;
+					height:69px;
+					float:left;
+				}
+				p{
+					color:#3e3e3e;
+				}
+				.se_recommend_new{
+					color:#ec3e7d;
+					font-size:14px;
+				}
+				.se_recommend_old{
+					color:#959595;
+					font-size:12px;
+					margin-left:10px;
+					text-decoration:line-through;
+				}
+			}
+		}
+	}
+	.se_details{
+		width:920px;
+		float:right;
+		height:248px;
+		line-height:32px;
+		font-weight:400;
+		font-size:21px;
+		background:#fff;
+		padding-top:20px;
+		.se_details_title{
+			padding-left:10px;
+			border-left:3px solid #db3f7e;
+			background:url(../images/probt.png) no-repeat 110px 3px;
+		}
+		ul{
+			padding:30px 45px;
+			li{
+				padding:6px 0;
+				color:#333;
+				height:34px;
+				width:830px;
+				.se_mc{
+					float:left;
+					color:#666;
+					font-size:14px;
+				}
+				.se_xq{
+					display:block;
+					width:580px;
+					text-align:left;
+					float:right;
+					font-size:14px;
+					color:#333;
+				}
+			}
+		}
+	}
+	.se_reviews_comi{
+		width:920px;
+		float:right;
+		height:800px;
+		margin-top:20px;
+		line-height:32px;
+		font-weight:400;
+		font-size:21px;
+		background:#fff;
+		padding-top:20px;
+		.se_reviews_title{
+			padding-left:10px;
+			border-left:3px solid #db3f7e;
+			background:url(../images/probt.png) no-repeat 110px -146px;
+		}
+		.se_evaluate{
+			margin-top:40px;
+			margin-left:55px;
+			font-size:36px;
+			color:#db3f7e;
+			font-weight:bold;
+			i{
+				font-size:24px;
+			}
+		}
+		.se_assess{
+			margin-top:50px;
+			li{
+				width:900px;
+				height:192px;
+				margin:0 auto;
+				margin-top:20px;
+				.se_assess_title{
+					width:120px;
+					text-align:center;
+					height:132px;
+					margin-top:20px;
+					float:left;
+					margin-right:5px;
+					img{
+						border-radius:50%;
+						margin:0 auto;
+						width:60px;
+						height:60px;
+					}
+					.se_assess_title_vip{
+						font-size:16px;
+						color:#3e3e3e;
+					}
+					.se_assess_title_user{
+						font-size:14px;
+						color:#3e3e3e;
+					}
+					.se_assess_title_skin{
+						color:#b2b2b2;
+						font-size:14px;
+					}
+				}
+				.se_discuss{
+					width:575px;
+					height:150px;
+					padding:20px 24px;
+					margin:0 auto;
+					background:#f2f2f2;
+					position:relative;
+					border-radius:5px;
+					.se_sanjiao{
+						position:absolute;
+						top:10px;
+						left:-20px;
+						font-size:30px;
+						color:#f2f2f2;
+					}
+					.se_discuss_title{
+						width:575px;
+						height:23px;
+						line-height:23px;
+						border-bottom:1px solid #ec3e7d;
+						padding-bottom:5px;
+						text-align:center;
+						font-size:14px;
+						span{
+							color:#ec3e7d;
+							float:left;
+						}
+						i{
+							color:#ec3e7d;
+						}
+					}
+					.se_comment{
+						margin-top:20px;
+						p{
+							font-size:14px;
+						}
+					}
+					.se_time{
+						position:absolute;
+						bottom:20px;
+						left:20px;
+						color:#bebebe;
+						font-size:14px;
+					}
+				}
 			}
 		}
 	}

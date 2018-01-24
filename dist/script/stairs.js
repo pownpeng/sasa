@@ -20,7 +20,7 @@ define(["jquery"],function(){
 		scroll:function(){
 			var scrolltop=document.documentElement.scrollTop||document.body.scrollTop;
 			this.mixtop=$(".must_check").offset().top;   //让楼梯隐藏的最大高度和最小高度
-			this.maxtop=$(".base").offset().top;    //为什么要放在这?因为ajax请求是异步,如果放在前面,这两个值就会出现错误
+			this.maxtop=$(".base").offset().top;    //ajax请求是异步
 			//console.log(this.mixtop,this.maxtop)
 			//console.log(scrolltop,this.mixtop,this.maxtop)
 			var clientwidth=document.documentElement.clientWidth||document.body.clientWidth;

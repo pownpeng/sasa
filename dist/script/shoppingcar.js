@@ -4,10 +4,12 @@ define(["jquery","cookie"],function(){     //设置cookie模块
 	}
 	Shoppingcar.prototype={
 		constructor:Shoppingcar,
-		init:function(){
-			this.box=$(".limit")
+		init:function(dom,ele){
+			this.box=dom;
+			this.showcookie=ele;
 			this.even();
 			this.readcookie();
+			this.movetop()
 		},
 		even:function(){
 			var _this=this;
@@ -52,10 +54,18 @@ define(["jquery","cookie"],function(){     //设置cookie模块
 			var shopquantity=$.cookie("quantity");  //将购物车的商品总数量输出到index页面中
 			//console.log($.cookie("shop"))      
 			if($.cookie("quantity")==undefined){
-				$(".shopnum").html(0)
+				this.showcookie.html(0)
 			}else{
-				$(".shopnum").html(shopquantity)
+				this.showcookie.html(shopquantity)
 			}
+		},
+		movetop:function(){
+			$(".top").on("click",function(event){
+				event.preventDefault()
+				$("body,html").animate({
+					"scrollTop":0
+				})
+			})
 		}
 	}
 

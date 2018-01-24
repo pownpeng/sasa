@@ -58,7 +58,7 @@ define(["jquery","cookie"],function(){     //购物车特效
 					var $key=$(this).attr("data-id")
 					var jsonarr=JSON.parse($.cookie("shop"))
 					var num=jsonarr.length;
-					var shopim=$(".cart_shop_list")
+					var shopim=$(".cart_shop_list") 
 					//console.log($key)
 					jsonarr.forEach(function(item,index){
 						if(item.id==$key){
