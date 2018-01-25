@@ -117,6 +117,29 @@ body{
 					top:3px;
 					color:#999;
 				}
+				ul{
+					width:344px;
+					height:auto;
+					position:absolute;
+					top:36px;
+					left:0;
+					background:#fff;
+					border:1px solid #ddd;
+					display:none;
+					li{
+						height:30px;
+						width:334px;
+						border-bottom:1px dotted #ddd;
+						padding:5px;
+						a{
+							display:block;
+							width:100%;
+							height:100%;
+							font-size:16px;
+							color:#333;
+						}
+					}
+				}
 			}
 			button{
 					border:none;
@@ -342,6 +365,7 @@ body{
 /*轮播图*/
 #banner{
 	width:100%;
+	height:420px;
 	margin:0 auto;
     background:#e7ddd4;
     position:relative;
@@ -354,25 +378,53 @@ body{
 		left:50%;
 		margin-left:-789px;
 		ul{
-				li{
-					position:absolute;
-					top:0;
-					left:0;
-					height:420px;
-					width:100%;
-					list-style: none;
-					display:block;
-					overflow: hidden;
-					border:0;
-					margin:0;
+			
+			li{
+				position:absolute;
+				top:0;
+				left:0;
+				height:420px;
+				width:100%;
+				list-style: none;
+				display:block;
+				overflow: hidden;
+				border:0;
+				margin:0;
+				a{
 					img{
 						height:420px;
 						width:100%;
 						margin: 0 auto;
-					}
+				   	}
 				}
 			}
 		}
+		.slider{
+			position:absolute;
+			bottom:15px;
+			left:50%;
+			margin-left:-88px;
+			width:175px;
+			z-index:1000;
+			height:21px;
+			span{
+				width:15px;
+				height:15px;
+				background:#333;
+				opacity:0.4;
+				float:left;
+				border-radius:50%;
+				margin-left:7px;
+				margin-right:7px;
+				cursor:pointer;
+				border:3px solid rgba(255,255,255,0.7)
+			}
+			.active{
+				background:#fa3778;
+				opacity:1;
+			}
+		}
+	}
 }
 /*公告栏*/
 .notice{

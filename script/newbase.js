@@ -1,4 +1,4 @@
-define(["jquery"],function(){
+define(["jquery"],function(){   //新品上市模块
 	function Base(){
 		//console.log(1)
 	}
