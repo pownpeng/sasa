@@ -6,7 +6,8 @@ require(["script/config.js"],function(){  //逻辑调用模块
 		newbase.init($(".newlist"));   //上面都是请求json数据和进行字符串拼接,以及一些小特效
 		stairs.init();        //楼梯
 		shopcar.init($(".limit"),$(".shopnum"));
-		shoplist.init();
+		shoplist.init(); 
+		//console.log($(".in_shop")==undefined)
 		effect.init();
 		$(".box").supperBanner({//轮播图
 			src:[

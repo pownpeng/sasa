@@ -29,7 +29,7 @@
                                    <li>我的评价</li>
                               </ul>
                          </li>
-					<li><a href="#"><i class="iconfont">&#xe673;</i>我的购物车</a></li>
+					<li class="in_shop" title="点击进入购物车"><button><a href="#javascript"><i class="iconfont">&#xe673;</i>我的购物车</a></button></li>
 					<li><a href="#"><i class="iconfont">&#xe668;</i>我的收藏</a></li>
 					<li><a href="#">我的站内信</a></li>
 					<li><a href="#">积分中心</a></li>
@@ -61,7 +61,7 @@
      <div id="nav"><!--商品导航栏-->
      	<div class="navcenr">
      		<div id="category">
-     			<div class="cate">
+     			<div class="cate" data-id="index">
      				<div class="categoryicon">
      					<div class="sasacategoryicon"></div>
      					<div class="sasacategoryicon"></div>
@@ -268,7 +268,7 @@
      		</div>
      		<div id="navtab">
      			<ul>
-     				<li class="navtabitem"><a href="#"><img src="images/icon-zz.gif"></a></li>
+     				<li class="navtabitem"><a href="localhost:8888/list.html"><img src="images/icon-zz.gif"></a></li>
      				<li class="navtabsep"><a>/</a></li>
      				<li class="navtabitem"><a href="#">面部护肤</a></li>
      				<li class="navtabsep"><a>/</a></li>
@@ -482,7 +482,7 @@
                           </div>
                           <div class="cart_checkout">
                                <p class="cart_info">共<span></span>件商品,价值<span></span></p>
-                               <button>去结算</button>
+                               <button><a href="localhost:8888/checkout.html" target="_blank">去结算</a></button>
                           </div>
                     </div>
           </div>

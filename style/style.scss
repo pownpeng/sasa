@@ -71,6 +71,17 @@ body{
 						left:0;
 					}
 				}
+				.in_shop{
+					button{
+						width:100%;
+						height:100%;
+						display:inline-block;
+						border:none;
+						background:none;
+						outline:none;
+						color:#6c6c6c;
+					}
+				}
 			}
 		}
 	}
@@ -1176,6 +1187,9 @@ body{
 		cursor:pointer;
 		text-align:center;
 		line-height:38px;
+		&:hover{
+			background:#ec3e7d;
+		}
 		a{
 			display:block;
 			width:100%;
@@ -1193,6 +1207,9 @@ body{
 		border-bottom:1px solid #666;
 		height:90px;
 		text-align:center;
+		&:hover{
+			background:#ec3e7d;
+		}
 		a{
 			display:block;
 			font-size:12px;
@@ -1340,9 +1357,15 @@ body{
 					width:260px;
 					height:40px;
 					background:#ec3e7d;
-					color:#fff;
-					text-align:center;
 					border:none;
+					a{
+						height:100%;
+						width:100%;
+						color:#fff;
+						text-align:center;
+						line-height:40px;
+						font-size:22px;
+					}
 				}
 			}	
 		}
@@ -1354,6 +1377,9 @@ body{
 		cursor:pointer;
 		text-align:center;
 		line-height:38px;
+		&:hover{
+			background:#ec3e7d;
+		}
 		a{
 			display:block;
 			width:100%;
@@ -1371,6 +1397,9 @@ body{
 		cursor:pointer;
 		text-align:center;
 		line-height:38px;
+		&:hover{
+			background:#ec3e7d;
+		}
 		a{
 			display:block;
 			width:100%;
@@ -1392,6 +1421,9 @@ body{
 			cursor:pointer;
 			text-align:center;
 			line-height:48px;
+			&:hover{
+				background:#ec3e7d;
+			}
 			a{
 				display:block;
 				width:100%;
@@ -1409,23 +1441,9 @@ body{
 			cursor:pointer;
 			text-align:center;
 			line-height:48px;
-			a{
-				display:block;
-				width:100%;
-				height:100%;
-				i{
-					font-size:20px;
-					color:#c69a62;
-				}
+			&:hover{
+				background:#ec3e7d;
 			}
-		}
-		.code{
-			width:38px;
-			height:38px;
-			z-index:9;
-			cursor:pointer;
-			text-align:center;
-			line-height:48px;
 			a{
 				display:block;
 				width:100%;

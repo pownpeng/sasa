@@ -1,5 +1,5 @@
 define(["jquery"],function(){
-	function seckill(){    //详情页模块
+	function seckill(){       //详情页模块
 		
 	}
 	seckill.prototype={

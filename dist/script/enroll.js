@@ -43,12 +43,12 @@
 			var reg2_3=/[!@#\$%\^&\*\(\).]/g;
 			var reg2_4=/^[a-z\d_\-!@#\$%\^&\*\(\).]{6,20}$/gi;
 			var val=[]
-			for(var i=0;i<this.dom.length;i++){
+			for(var i=0;i<this.dom.length;i++){  //取得所有value值
 				val.push($(this.dom[i]).val())
 			}
 			console.log(val[1],val.length)
 			for(var j=0;j<val.length;j++){
-				if(j==0){
+				if(j==0){   //账号验证
 					if(reg1.test(val[j])==true){
 						console.log("账号正确")
 					}else{
@@ -56,7 +56,7 @@
 						return 0;
 					}
 				}
-				if(j==1){
+				if(j==1){  密码验证
 					var count=0;
 					if(reg2_1.test(val[j])==true){
 						count+=1;
@@ -77,14 +77,14 @@
 						case 3: console.log("你的密码很安全");break;
 					}
 				}
-				if(j==2){
+				if(j==2){  //再次输入密码验证
 					if(val[j]==val[j-1]){
 						console.log(密码正确)
 					}else{
 						console.log(两次密码输入不一致)
 					}
 				}
-				if(j==3){
+				if(j==3){  //手机号码验证
 					var pnone=/^1[34578]\d{9}$/
 					if(pnone.text(val[j])){
 						console.log(格式正确)
@@ -92,7 +92,7 @@
 						console.log(格式有误)
 					}
 				}
-				if(j==4){
+				if(j==4){  //验证码验证
 					var yzmreg=/YMR5/i
 					if(val[j]==yzmreg){
 						console.log("1")

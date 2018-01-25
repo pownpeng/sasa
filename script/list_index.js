@@ -1,9 +1,10 @@
 require(["script/list_config.js"],function(){
-	require(["waterfull","shopcar","shoplist","effect"],function(waterfull,shopcar,shoplist,effect){
+	require(["waterfull","shopcar","shoplist","effect","motion"],function(waterfull,shopcar,shoplist,effect,motion){
 		waterfull.init($(".li_fonfor"))
 		shopcar.init($(".li_fonfor"),$(".shopnum"));
 		shoplist.init($(".li_fonfor"));
-		effect.init()
+		motion.init()
+		effect.init() 
 		setTimeout(function(){
 			$("button",".li_fonfor").on("click",function(){
 				effect.init()

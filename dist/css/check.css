@@ -1,0 +1,147 @@
+.check {
+  min-height: 552px;
+  width: 1090px;
+  margin: 0 auto;
+  padding-top: 34px; }
+  .check .check_title {
+    color: #9e281e;
+    font-size: 16px; }
+    .check .check_title span {
+      margin-left: 15px; }
+  .check .check_shopbox {
+    min-height: 500px;
+    width: 100%;
+    margin-top: 30px; }
+    .check .check_shopbox .check_shopbox_ul {
+      padding-bottom: 30px;
+      border: 1px solid #ebebeb;
+      border-radius: 5px;
+      background: #fff; }
+      .check .check_shopbox .check_shopbox_ul .check_shop_info {
+        height: 39px;
+        border-bottom: 1px solid #ebebeb; }
+        .check .check_shopbox .check_shopbox_ul .check_shop_info p {
+          float: left;
+          text-align: center;
+          line-height: 39px;
+          height: 39px; }
+        .check .check_shopbox .check_shopbox_ul .check_shop_info .check_shop_info_title {
+          width: 485px; }
+        .check .check_shopbox .check_shopbox_ul .check_shop_info .check_shop_info_for {
+          width: 176px; }
+        .check .check_shopbox .check_shopbox_ul .check_shop_info .check_shop_info_price {
+          width: 176px; }
+        .check .check_shopbox .check_shopbox_ul .check_shop_info .check_shop_info_num {
+          width: 64px; }
+        .check .check_shopbox .check_shopbox_ul .check_shop_info .check_shop_info_operation {
+          width: 180px; }
+      .check .check_shopbox .check_shopbox_ul li {
+        height: 130px;
+        margin-bottom: 10px;
+        background: #dff1fd;
+        position: relative; }
+        .check .check_shopbox .check_shopbox_ul li p {
+          float: left;
+          text-align: center;
+          padding-top: 20px;
+          overflow: hidden; }
+        .check .check_shopbox .check_shopbox_ul li .check_check {
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          margin-top: -2px; }
+        .check .check_shopbox .check_shopbox_ul li img {
+          width: 79px;
+          height: 79px;
+          position: absolute;
+          top: 50%;
+          left: 30px;
+          margin-top: -40px; }
+        .check .check_shopbox .check_shopbox_ul li .check_shop_subtit {
+          padding-top: 20px;
+          width: 370px;
+          margin-left: 130px;
+          font-size: 14px;
+          line-height: 24px;
+          color: #000502;
+          overflow: hidden;
+          text-align: left; }
+        .check .check_shopbox .check_shopbox_ul li .check_shop_title {
+          padding-top: 20px;
+          width: 176px;
+          overflow: hidden;
+          line-height: 24px;
+          max-height: 100px; }
+        .check .check_shopbox .check_shopbox_ul li .check_shop_price {
+          width: 176px;
+          padding-top: 50px;
+          overflow: hidden; }
+        .check .check_shopbox .check_shopbox_ul li .check_shop_num {
+          width: 84px;
+          padding-top: 50px;
+          overflow: hidden; }
+          .check .check_shopbox .check_shopbox_ul li .check_shop_num input {
+            width: 30px;
+            height: 22px;
+            float: left;
+            text-align: center; }
+          .check .check_shopbox .check_shopbox_ul li .check_shop_num a {
+            display: inline-block;
+            float: left;
+            width: 22px;
+            height: 22px;
+            border: 1px solid #666;
+            background: #fff;
+            color: #000502; }
+        .check .check_shopbox .check_shopbox_ul li .check_shop_operation {
+          width: 120px;
+          overflow: hidden;
+          padding-top: 50px; }
+          .check .check_shopbox .check_shopbox_ul li .check_shop_operation a {
+            font-size: 14px;
+            color: #000502; }
+    .check .check_shopbox .check_settle {
+      height: 160px;
+      background: #fff;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      padding-top: 10px; }
+      .check .check_shopbox .check_settle .check_settle_title {
+        height: 32px;
+        line-height: 32px;
+        padding-left: 20px; }
+        .check .check_shopbox .check_settle .check_settle_title span {
+          color: #727270; }
+        .check .check_shopbox .check_settle .check_settle_title .check_remove {
+          margin-left: 30px;
+          font-size: 14px;
+          color: #727270; }
+    .check .check_shopbox .check_settle_cart_info .cart_info {
+      margin-left: 30px;
+      font-size: 16px;
+      color: #727270; }
+      .check .check_shopbox .check_settle_cart_info .cart_info .cart_info_num {
+        font-size: 24px;
+        color: #e65478; }
+      .check .check_shopbox .check_settle_cart_info .cart_info .cart_info_price {
+        font-size: 24px;
+        color: #e65478; }
+    .check .check_shopbox .check_settle_cart_info .settle {
+      height: 30px;
+      margin-top: 30px;
+      text-align: center; }
+      .check .check_shopbox .check_settle_cart_info .settle button {
+        height: 38px;
+        width: 138px;
+        color: #fff;
+        background: #ec3e7d;
+        border: none;
+        font-size: 20px;
+        margin-right: 5px; }
+        .check .check_shopbox .check_settle_cart_info .settle button i {
+          font-size: 20px;
+          margin-right: 5px; }
+
+#sasacategory > ul {
+  display: none; }

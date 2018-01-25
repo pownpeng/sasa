@@ -12,7 +12,7 @@ define(["jquery","cookie"],function(){   //读取cookie模块
 			this.even();
 			this.box=$(".commodity")
 		},
-		even:function(){
+		even:function(){   //购物车的显示与隐藏
 			var _this=this;
 			this.count=0;
 			this.turn.on("click",function(){
@@ -26,13 +26,13 @@ define(["jquery","cookie"],function(){   //读取cookie模块
 					return 0;
 				}
 			});
+			$(".in_shop button").on("click",function(event){
+				$(_this.turn).trigger("click")
+			});
 			if(this.dom!=undefined){
 				setTimeout(function(){
-					$("button",this.dom).on("click",function(){
-						_this.shopingcar.css({
-							display:"none"
-						})
-						_this.count=0;
+					$("button",_this.dom).on("click",function(){
+						$(_this.close).trigger("click")
 					})
 				},1000)
 			}

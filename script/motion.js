@@ -2,13 +2,14 @@ define(["jquery"],function(){
 	function Motion(){
 
 	}
-	Motion.prototype={  //二级菜单模块
+	Motion.prototype={  //二级菜单及其他特效模块
 		constructor:Motion,
 		init:function(){
 			this.$lis=$("#sasacategory>ul>li")
 			this.$tabs=$("#bar>ul>li")
 			this.hove()
 			this.tab()
+			this.ho()
 		},
 		hove:function(){
 			this.$lis.on("mouseover",function(){
@@ -68,6 +69,32 @@ define(["jquery"],function(){
 					padding:"0"
 				})
 			})
+		},
+		ho:function(){
+			$("#sasacategory").delegate("span","mouseover",function(){ //事件委托
+				$(this).css({
+					color:"#fa3778"
+				})
+			});
+			$("#sasacategory").delegate("span","mouseout",function(){ //事件委托
+				$(this).css({
+					color:"#999"
+				})
+			})
+			if(!$(".cate").attr("data-id")){
+				//console.log(1)
+				$("#category").on("mouseover",function(){
+					$("#sasacategory>ul").css({
+						display:"block",
+						zIndex:"1000"
+					})
+				})
+				$("#category").on("mouseout",function(){
+					$("#sasacategory>ul").css({
+						display:"none"
+					})
+				})
+			}
 		}
 	}
 

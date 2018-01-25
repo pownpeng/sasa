@@ -5,6 +5,7 @@ require.config({  //配置文件模块
 		"shopcar":"script/shoppingcar",
 		"shoplist":"script/shoppinglist",
 		"effect":"script/effect",
-		"seckill":"script/seckill"
+		"seckill":"script/seckill",
+		"motion":"script/motion"
 	}
 })

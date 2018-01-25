@@ -5,6 +5,7 @@ require.config({  //配置文件模块
 		"waterfull":"script/waterfull",
 		"shopcar":"script/shoppingcar",
 		"shoplist":"script/shoppinglist",
-		"effect":"script/effect"
+		"effect":"script/effect",
+		"motion":"script/motion"
 	}
 })
