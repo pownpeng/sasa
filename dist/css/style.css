@@ -24,6 +24,9 @@ img {
 a, input {
   outline: none; }
 
+button {
+  outline: none; }
+
 em, i {
   font-style: normal; }
 
@@ -33,8 +36,8 @@ b, strong, h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: 'iconfont';
   /* project id 545694 */
-  src: url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.eot");
-  src: url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.woff") format("woff"), url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.ttf") format("truetype"), url("//at.alicdn.com/t/font_545694_5mmovf9ji2wng66r.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_545694_hrz89azj25mz33di.eot");
+  src: url("//at.alicdn.com/t/font_545694_hrz89azj25mz33di.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_545694_hrz89azj25mz33di.woff") format("woff"), url("//at.alicdn.com/t/font_545694_hrz89azj25mz33di.ttf") format("truetype"), url("//at.alicdn.com/t/font_545694_hrz89azj25mz33di.svg#iconfont") format("svg"); }
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -67,20 +70,39 @@ body {
     #topbar .top #bar {
       float: right;
       text-align: right; }
-      #topbar .top #bar ul li {
+      #topbar .top #bar > ul > li {
         border: none;
         display: inline-block;
         height: 32px;
         position: relative; }
-        #topbar .top #bar ul li a {
+        #topbar .top #bar > ul > li a {
           display: block;
           padding: 0 12px;
           font-weight: normal;
           color: #6c6c6c; }
-          #topbar .top #bar ul li a i {
+          #topbar .top #bar > ul > li a i {
             color: #ec3e7d;
             margin-right: 3px;
             font-weight: bold; }
+        #topbar .top #bar > ul > li ul {
+          width: 86px;
+          padding: 0;
+          background: #fff;
+          z-index: 10000;
+          height: 0;
+          text-align: left;
+          overflow: hidden;
+          position: absolute;
+          top: 32px;
+          left: 0; }
+      #topbar .top #bar > ul .in_shop button {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        border: none;
+        background: none;
+        outline: none;
+        color: #6c6c6c; }
 
 /*搜索栏*/
 #head {
@@ -113,6 +135,26 @@ body {
           left: 3px;
           top: 3px;
           color: #999; }
+        #head .headsearch #search .searchinput ul {
+          width: 344px;
+          height: auto;
+          position: absolute;
+          top: 36px;
+          left: 0;
+          background: #fff;
+          border: 1px solid #ddd;
+          display: none; }
+          #head .headsearch #search .searchinput ul li {
+            height: 30px;
+            width: 334px;
+            border-bottom: 1px dotted #ddd;
+            padding: 5px; }
+            #head .headsearch #search .searchinput ul li a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              font-size: 16px;
+              color: #333; }
       #head .headsearch #search button {
         border: none;
         color: white;
@@ -182,24 +224,24 @@ body {
       #nav .navcenr #category #sasacategory {
         position: absolute;
         top: 36px; }
-        #nav .navcenr #category #sasacategory ul li {
+        #nav .navcenr #category #sasacategory > ul > li {
           width: 162px;
           height: 29px;
           padding: 11px 14px;
           position: relative;
           background: #fa3778;
           border-bottom: 1px dotted #fe7dab; }
-          #nav .navcenr #category #sasacategory ul li div {
+          #nav .navcenr #category #sasacategory > ul > li div {
             height: 30px;
             line-height: 30px;
             float: left;
             padding-left: 35px;
             overflow: hidden;
             background-image: url("../images/pc_categorym-01.png"); }
-            #nav .navcenr #category #sasacategory ul li div a {
+            #nav .navcenr #category #sasacategory > ul > li div a {
               font-size: 16px;
               color: #fff; }
-          #nav .navcenr #category #sasacategory ul li i {
+          #nav .navcenr #category #sasacategory > ul > li i {
             display: block;
             float: right;
             color: #fff;
@@ -208,31 +250,57 @@ body {
             text-align: center;
             line-height: 30px;
             font-size: 16px; }
-          #nav .navcenr #category #sasacategory ul li .arrow_1 {
+          #nav .navcenr #category #sasacategory > ul > li .arrow_1 {
             background-repeat: no-repeat;
             background-position: 0 -5px; }
-          #nav .navcenr #category #sasacategory ul li .arrow_2 {
+          #nav .navcenr #category #sasacategory > ul > li .arrow_2 {
             background-repeat: no-repeat;
             background-position: 0 -40px; }
-          #nav .navcenr #category #sasacategory ul li .arrow_3 {
+          #nav .navcenr #category #sasacategory > ul > li .arrow_3 {
             background-repeat: no-repeat;
             background-position: 0 -72px; }
-          #nav .navcenr #category #sasacategory ul li .arrow_4 {
+          #nav .navcenr #category #sasacategory > ul > li .arrow_4 {
             background-repeat: no-repeat;
             background-position: 0 -102px; }
-          #nav .navcenr #category #sasacategory ul li .arrow_5 {
+          #nav .navcenr #category #sasacategory > ul > li .arrow_5 {
             background-repeat: no-repeat;
             background-position: 0 -135px; }
-          #nav .navcenr #category #sasacategory ul li .arrow_6 {
+          #nav .navcenr #category #sasacategory > ul > li .arrow_6 {
             background-repeat: no-repeat;
             background-position: 0 -172px; }
-          #nav .navcenr #category #sasacategory ul li .arrow_7 {
+          #nav .navcenr #category #sasacategory > ul > li .arrow_7 {
             background-repeat: no-repeat;
             background-position: 0 -204px; }
-          #nav .navcenr #category #sasacategory ul li .arrow_8 {
+          #nav .navcenr #category #sasacategory > ul > li .arrow_8 {
             background-repeat: no-repeat;
             background-position: 0 -237px; }
-        #nav .navcenr #category #sasacategory ul .catehalf {
+          #nav .navcenr #category #sasacategory > ul > li ul {
+            display: none;
+            width: 340px;
+            height: auto;
+            background: #fff;
+            padding: 10px 25px;
+            overflow: hidden;
+            border: 1px solid #fa3778;
+            position: absolute;
+            left: 190px;
+            top: 0px; }
+            #nav .navcenr #category #sasacategory > ul > li ul > li {
+              height: 81px;
+              width: 100%; }
+              #nav .navcenr #category #sasacategory > ul > li ul > li p {
+                font-size: 14px;
+                font-weight: bold;
+                color: #555; }
+              #nav .navcenr #category #sasacategory > ul > li ul > li span {
+                font-size: 12px;
+                color: #999;
+                padding: 0 5px;
+                display: inline-block;
+                cursor: pointer;
+                line-height: 24px;
+                text-align: center; }
+        #nav .navcenr #category #sasacategory > ul .catehalf {
           height: 30px; }
     #nav .navcenr #navtab {
       float: left;
@@ -274,13 +342,19 @@ body {
 /*轮播图*/
 #banner {
   width: 100%;
+  height: 420px;
   margin: 0 auto;
-  background: #e7ddd4; }
+  background: #e7ddd4;
+  position: relative; }
   #banner .box {
     height: 420px;
     overflow: hidden;
-    position: relative; }
-    #banner .box ol a li {
+    width: 1578px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -789px; }
+    #banner .box ul li {
       position: absolute;
       top: 0;
       left: 0;
@@ -291,42 +365,30 @@ body {
       overflow: hidden;
       border: 0;
       margin: 0; }
-      #banner .box ol a li div {
+      #banner .box ul li a img {
+        height: 420px;
         width: 100%;
-        height: 450px;
         margin: 0 auto; }
-      #banner .box ol a li .ban1 {
-        background: url("../images/9a6c9718827be1538a7092609738409fe04a265f.jpg") no-repeat top center; }
-      #banner .box ol a li .ban2 {
-        background: url("../images/0bd4930d06ee8d166f7ba6cf0a61947d0af535a2.jpg") no-repeat top center; }
-      #banner .box ol a li .ban3 {
-        background: url("../images/bebbf1e72db1846b00bac8746772b3e4bfe0eaf1.jpg") no-repeat top center; }
-      #banner .box ol a li .ban4 {
-        background: url("../images/34ca4ffcd7471264c47008941863ea3c87fff4b3.jpg") no-repeat top center; }
-      #banner .box ol a li .ban5 {
-        background: url("../images/74d4c5a5ef1dd4d552c8bacf139f9724d9b987bb.jpg") no-repeat top center; }
-      #banner .box ol a li .ban6 {
-        background: url("../images/f7a55f6c57f29e51c89cbb9835150898a3716b57.jpg") no-repeat top center; }
-    #banner .box ol a .first {
-      z-index: 1;
-      opacity: 1; }
-    #banner .box #imgnav ul {
+    #banner .box .slider {
       position: absolute;
-      z-index: 60;
-      bottom: 10px;
+      bottom: 15px;
       left: 50%;
-      margin-left: -105px; }
-      #banner .box #imgnav ul li {
-        float: left;
-        background: #333;
-        opacity: 0.4;
+      margin-left: -88px;
+      width: 175px;
+      z-index: 1000;
+      height: 21px; }
+      #banner .box .slider span {
         width: 15px;
         height: 15px;
+        background: #333;
+        opacity: 0.4;
+        float: left;
         border-radius: 50%;
         margin-left: 7px;
         margin-right: 7px;
+        cursor: pointer;
         border: 3px solid rgba(255, 255, 255, 0.7); }
-      #banner .box #imgnav ul .active {
+      #banner .box .slider .active {
         background: #fa3778;
         opacity: 1; }
 
@@ -574,8 +636,9 @@ body {
         cursor: pointer;
         background: #e93b78;
         color: #fff;
-        font-size: 16px;
-        letter-spacing: 1px; }
+        font-size: 14px;
+        letter-spacing: 1px;
+        border: none; }
 
 .limit .muchselling {
   text-align: center;
@@ -1017,6 +1080,8 @@ body {
     cursor: pointer;
     text-align: center;
     line-height: 38px; }
+    .sidebar .account:hover {
+      background: #ec3e7d; }
     .sidebar .account a {
       display: block;
       width: 100%;
@@ -1031,6 +1096,8 @@ body {
     border-bottom: 1px solid #666;
     height: 90px;
     text-align: center; }
+    .sidebar .shopingcar:hover {
+      background: #ec3e7d; }
     .sidebar .shopingcar a {
       display: block;
       font-size: 12px;
@@ -1046,6 +1113,125 @@ body {
         border-radius: 10px;
         background: #ec3e7d;
         color: #fff; }
+    .sidebar .shopingcar .shopcarlist {
+      width: 300px;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 38px;
+      background: #fff;
+      border: 1px solid #eaeaea; }
+      .sidebar .shopingcar .shopcarlist .cart_title {
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        color: #333;
+        padding-left: 15px;
+        border-bottom: 1px solid #eaeaea;
+        position: relative;
+        text-align: left; }
+        .sidebar .shopingcar .shopcarlist .cart_title .cart_close {
+          position: absolute;
+          top: 50%;
+          margin-top: -10px;
+          right: 12px;
+          background: #fff;
+          border: none; }
+          .sidebar .shopingcar .shopcarlist .cart_title .cart_close i {
+            color: #333;
+            font-size: 16px; }
+      .sidebar .shopingcar .shopcarlist .cart_shop {
+        width: 300px;
+        height: 70%;
+        min-height: 300px;
+        overflow: hidden; }
+        .sidebar .shopingcar .shopcarlist .cart_shop .cart_choice {
+          position: relative;
+          width: 280px;
+          height: 36px;
+          line-height: 36px;
+          padding-left: 20px;
+          text-align: left;
+          background: #f2f2f2;
+          border-bottom: 1px solid #ebebeb;
+          border-top: 1px solid #ebebeb; }
+          .sidebar .shopingcar .shopcarlist .cart_shop .cart_choice input {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            margin-top: -5px; }
+          .sidebar .shopingcar .shopcarlist .cart_shop .cart_choice span {
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 10px; }
+        .sidebar .shopingcar .shopcarlist .cart_shop .cart_shop_list {
+          position: relative;
+          width: 240px;
+          height: 80px;
+          padding-left: 60px;
+          margin-top: 10px; }
+          .sidebar .shopingcar .shopcarlist .cart_shop .cart_shop_list input {
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            margin-top: -10px; }
+          .sidebar .shopingcar .shopcarlist .cart_shop .cart_shop_list .cart_shop_item {
+            text-align: left; }
+            .sidebar .shopingcar .shopcarlist .cart_shop .cart_shop_list .cart_shop_item img {
+              width: 70px;
+              height: 70px;
+              float: left; }
+            .sidebar .shopingcar .shopcarlist .cart_shop .cart_shop_list .cart_shop_item p {
+              margin-left: 80px;
+              color: #333;
+              display: block;
+              font-size: 14px;
+              text-align: left;
+              margin-bottom: 10px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2; }
+            .sidebar .shopingcar .shopcarlist .cart_shop .cart_shop_list .cart_shop_item .price {
+              color: #ec3e7d;
+              font-weight: bold;
+              margin-left: 10px;
+              margin-right: 40px; }
+            .sidebar .shopingcar .shopcarlist .cart_shop .cart_shop_list .cart_shop_item .number {
+              font-size: 12px; }
+            .sidebar .shopingcar .shopcarlist .cart_shop .cart_shop_list .cart_shop_item i {
+              color: #c69a62;
+              font-size: 20px;
+              float: right;
+              margin-right: 10px;
+              cursor: pointer; }
+        .sidebar .shopingcar .shopcarlist .cart_shop .cart_item_list {
+          width: auto;
+          height: auto; }
+      .sidebar .shopingcar .shopcarlist .cart_checkout {
+        position: absolute;
+        bottom: 20px;
+        left: 20px; }
+        .sidebar .shopingcar .shopcarlist .cart_checkout p {
+          width: 260px;
+          color: #666;
+          font-size: 14px;
+          margin-bottom: 10px; }
+          .sidebar .shopingcar .shopcarlist .cart_checkout p span {
+            color: #ec3e7d; }
+        .sidebar .shopingcar .shopcarlist .cart_checkout button {
+          width: 260px;
+          height: 40px;
+          background: #ec3e7d;
+          border: none; }
+          .sidebar .shopingcar .shopcarlist .cart_checkout button a {
+            height: 100%;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            font-size: 22px; }
   .sidebar .collection {
     width: 38px;
     height: 38px;
@@ -1053,6 +1239,8 @@ body {
     cursor: pointer;
     text-align: center;
     line-height: 38px; }
+    .sidebar .collection:hover {
+      background: #ec3e7d; }
     .sidebar .collection a {
       display: block;
       width: 100%;
@@ -1067,6 +1255,8 @@ body {
     cursor: pointer;
     text-align: center;
     line-height: 38px; }
+    .sidebar .historical:hover {
+      background: #ec3e7d; }
     .sidebar .historical a {
       display: block;
       width: 100%;
@@ -1085,6 +1275,8 @@ body {
       cursor: pointer;
       text-align: center;
       line-height: 48px; }
+      .sidebar .iconbottom .customer:hover {
+        background: #ec3e7d; }
       .sidebar .iconbottom .customer a {
         display: block;
         width: 100%;
@@ -1099,20 +1291,8 @@ body {
       cursor: pointer;
       text-align: center;
       line-height: 48px; }
-      .sidebar .iconbottom .code a {
-        display: block;
-        width: 100%;
-        height: 100%; }
-        .sidebar .iconbottom .code a i {
-          font-size: 20px;
-          color: #c69a62; }
-    .sidebar .iconbottom .code {
-      width: 38px;
-      height: 38px;
-      z-index: 9;
-      cursor: pointer;
-      text-align: center;
-      line-height: 48px; }
+      .sidebar .iconbottom .code:hover {
+        background: #ec3e7d; }
       .sidebar .iconbottom .code a {
         display: block;
         width: 100%;

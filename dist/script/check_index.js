@@ -1,0 +1,14 @@
+require(["script/check_config.js"],function(){
+	require(["jquery","cookie","shopcar","shoplist","effect","motion","checkout"],function(jquery,cookie,shopcar,shoplist,effect,motion,checkout){
+		shopcar.init($(".se_add"),$(".shopnum"));
+		shoplist.init($(".se_add"));
+		effect.init();
+		motion.init();
+		setTimeout(function(){
+			$("button",".se_add").on("click",function(){
+				effect.init()
+			})
+		},1000)
+		checkout.init()
+	})
+})

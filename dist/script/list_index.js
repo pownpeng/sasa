@@ -1,0 +1,14 @@
+require(["script/list_config.js"],function(){
+	require(["waterfull","shopcar","shoplist","effect","motion"],function(waterfull,shopcar,shoplist,effect,motion){
+		waterfull.init($(".li_fonfor"))
+		shopcar.init($(".li_fonfor"),$(".shopnum"));
+		shoplist.init($(".li_fonfor"));
+		motion.init()
+		effect.init() 
+		setTimeout(function(){
+			$("button",".li_fonfor").on("click",function(){
+				effect.init()
+			})
+		},1000)
+	})
+})

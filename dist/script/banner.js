@@ -1,53 +1,72 @@
-define(["jquery"],function(){
+define(["jquery"],function(){   //轮播图模块
 	function Banner(){
 
 	}
 	Banner.prototype={
 		constructor:Banner,
-		init:function(){
-			this.index=1;
-			this.move()
+		init:function(dom){
+			this.box=dom;
+			this.index=0;
+			this.cspan()
+		},
+		cspan:function(){  //播放
+			this.lis=this.box.find("li")
+			this.spans=this.box.find("span")
+			//console.log(this.lis)
 			var _this=this
-			$("li","#imgnav").on("mouseover",function(){
-				_this.index=$(this).index()
-				$.proxy(_this.move(_this.index),_this)
-			})
-		},
-		move:function(index){
-			var timer;
-			var _this=this;
-			this.dom=$("li",".ban")
-			clearInterval(timer)
-			timer=setInterval(function(){
-				$.proxy(_this.anim(index),_this)
-			},4000) 
-		},
-		anim:function(index){
-				if(!index){
-					this.index=index
+			this.timer;
+			clearInterval(this.timer)
+			this.timer=setInterval(function(){
+				//console.log(new Date())
+				_this.index++
+				if(_this.index>=5){
+					_this.index=0
 				}
-				if(this.index==this.dom.length){
-					this.index=0
+				for(var i=0;i<_this.lis.length;i++){  //清除样式
+					$(_this.lis[i]).css({
+						opacity:0,
+						zIndex:"0"
+					})
+					$(_this.spans[i]).removeClass("active")
 				}
-				for(var i=0;i<this.dom.length;i++){
-					this.dom[i].style.zIndex="0";
-					this.dom[i].style.opacity="0"
-				}
-				$(this.dom[this.index]).animate({
-					opacity:"1"
-				},1000)
-				$(this.dom[this.index]).css({
+				$(_this.lis[_this.index]).css({
+					opacity:0,
 					zIndex:"1"
 				})
-				$("li","#imgnav").removeClass()
-				$($("li","#imgnav")[this.index]).addClass("active")
-				this.index++;
+				$(_this.lis[_this.index]).stop(true,true).animate({
+					opacity:1
+				},500)
+				$(_this.spans[_this.index]).addClass("active")
+			},4000)
+			this.movehov()
+		},
+		movehov:function(){  //下方按钮操作区
+			var _this=this
+			this.box.on("mouseenter",function(){
+				clearInterval(_this.timer)
+			})
+			this.spans.on("mouseover",function(){
+				_this.index=$(this).index()
+				for(var i=0;i<_this.lis.length;i++){
+					$(_this.lis[i]).css({
+						opacity:0,
+						zIndex:"0"
+					})
+					$(_this.spans[i]).removeClass("active")
+				}
+				$(_this.lis[_this.index]).css({
+					opacity:0,
+					zIndex:"1"
+				})
+				$(_this.lis[_this.index]).stop(true,true).animate({
+					opacity:1
+				},500)
+				$(_this.spans[_this.index]).addClass("active")
+			})
+			this.box.on("mouseleave",function(){
+				_this.cspan()
+			})
 		}
 	}
-
-
-
-
-
-	return new Banner()
+ return new Banner()
 })

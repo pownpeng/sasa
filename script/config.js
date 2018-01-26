@@ -7,6 +7,10 @@ require.config({  //配置文件模块
 		"ranklist":"script/ranklist",
 		"newbase":"script/newbase",
 		"stairs":"script/stairs",
-		"banner":"script/banner"
+		"banner":"script/banner",
+		"shopcar":"script/shoppingcar",
+		"shoplist":"script/shoppinglist",
+		"effect":"script/effect",
+		"motion":"script/motion"
 	}
 })
