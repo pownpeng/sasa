@@ -468,3 +468,40 @@
 		}
 	}
 }
+#secilll_ul{
+	.navtabitem{
+		float:left;
+		display:inline-block;
+		overflow:hidden;
+		padding:0 5px;
+		text-align:center;
+		a{
+			color:#111111;
+			display:block;
+			font-size:16px;
+			float:left;
+		}
+		.hoticon{
+				width:25px;
+				height:16px;
+				background:url("../images/top_hot_icon.png") no-repeat;
+				display:inline-block;
+				margin-left:3px;
+				margin-bottom:-1px;
+		}
+	}
+	.navtabsep{
+		float:left;
+		display:inline-block;
+		overflow:hidden;
+		padding:0 5px;
+		width:20px !important;
+		text-align:center !important;
+		margin : 0 !important;
+		a{
+			font-size:16px;
+			color:#eee !important;
+			font-weight:100;
+		}
+	}
+}

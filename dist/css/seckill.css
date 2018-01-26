@@ -385,3 +385,35 @@
             left: 20px;
             color: #bebebe;
             font-size: 14px; }
+
+#secilll_ul .navtabitem {
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 5px;
+  text-align: center; }
+  #secilll_ul .navtabitem a {
+    color: #111111;
+    display: block;
+    font-size: 16px;
+    float: left; }
+  #secilll_ul .navtabitem .hoticon {
+    width: 25px;
+    height: 16px;
+    background: url("../images/top_hot_icon.png") no-repeat;
+    display: inline-block;
+    margin-left: 3px;
+    margin-bottom: -1px; }
+
+#secilll_ul .navtabsep {
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 5px;
+  width: 20px !important;
+  text-align: center !important;
+  margin: 0 !important; }
+  #secilll_ul .navtabsep a {
+    font-size: 16px;
+    color: #eee !important;
+    font-weight: 100; }
