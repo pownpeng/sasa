@@ -13,7 +13,7 @@ Waterfull.prototype={
 	},
 	reload:function(count){
 		$.ajax({
-			url:"json/Waterfull.json",
+			url:"./json/waterfull.json",
 			type:"GET",
 			context:this
 		})
