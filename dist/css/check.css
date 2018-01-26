@@ -154,7 +154,8 @@
         text-align: center;
         color: #ec3e7d;
         font-weight: bold;
-        display: none; }
+        display: none;
+        background: #fff; }
         .check .check_shopbox .check_settle_cart_info .settle .payment img {
           width: 100%;
           height: 100%; }
